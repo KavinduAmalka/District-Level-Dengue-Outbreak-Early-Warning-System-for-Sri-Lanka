@@ -128,19 +128,20 @@
 \section{Preliminary Literature Review}
 
 \subsection{Existing Research and Key Findings}
-Existing studies on dengue forecasting in Sri Lanka primarily emphasize the correlation between climatic variables and disease transmission. Researchers such as Malavige et al. (2021) and various epidemiological white papers identify rainfall, temperature, and relative humidity as the dominant drivers of Aedes mosquito breeding cycles.
+Dengue forecasting in Sri Lanka is heavily linked to climatic variables such as rainfall, temperature, and humidity, which drive Aedes mosquito breeding cycles.
+
 \begin{itemize}
-    \item \textbf{Methodologies \& Outcomes:} Current literature strongly advocates for Deep Learning architectures, specifically Long Short-Term Memory (LSTM) networks, due to their superior ability to model non-linear temporal patterns compared to traditional statistical methods like ARIMA.
-    \item \textbf{Strengths:} Existing approaches excel at establishing high-precision correlations between meteorological data and immediate outbreak peaks, often utilizing satellite-derived environmental data.
-    \item \textbf{Weaknesses:} A significant limitation is that most research remains theoretical or limited to mathematical modeling, with a distinct lack of functional, user-centric software tools or dashboards. Furthermore, there is a prominent "Western Province Bias," where findings from Colombo are often generalized to other ecological zones with different transmission dynamics.
+    \item \textbf{Methodologies:} Recent studies favor Deep Learning models like Long Short-Term Memory (LSTM) for capturing non-linear temporal patterns.
+    \item \textbf{Strengths:} Existing approaches accurately correlate meteorological data with immediate outbreak peaks.
+    \item \textbf{Weaknesses:} Most research remains theoretical, lacking functional software dashboards for real-time use. Additionally, a "Western Province Bias" exists, where findings from Colombo are often generalized across different ecological zones.
 \end{itemize}
 
 \subsection{Research Gap and Justification}
-A critical review of over 20 scholarly sources identifies a major gap in transforming complex predictive models into actionable public health tools that can be used for real-time decision-making.
+A systematic review of prior work identifies a critical gap in translating predictive models into actionable software-driven tools for health authorities.
+
 \begin{itemize}
-    \item \textbf{Research Gaps:} Current research frequently isolates climatic factors, neglecting the combined socio-temporal impact of human mobility and localized biological larval indices. Additionally, there is no unified, software-driven dashboard that visualizes 4-week lead-time forecasts for multi-province surveillance.
-    \item \textbf{Addressing the Gaps:} Our research addresses these deficiencies by developing an \textbf{Integrated Predictive Dashboard}. Diverging from island-wide generalizations, we adopt a localized approach by selecting \textbf{one critical district from each of the nine provinces} for granular spatio-temporal analysis.
-    \item \textbf{Justification and Divergence:} This study is necessary to provide health authorities with a proactive resource allocation tool. By analyzing a comprehensive weekly panel dataset since 2017, our work builds on proven LSTM frameworks while incorporating mobility proxies and larval density reports to ensure the system is relevant to modern epidemiological trends.
+    \item \textbf{Addressing the Gaps:} Our research addresses the lack of integrated surveillance tools by developing a \textbf{Functional Predictive Dashboard}. To ensure zonal relevance, we analyze \textbf{one critical district per province} instead of island-wide generalizations.
+    \item \textbf{Justification:} This study is necessary to provide proactive lead-time forecasts for resource allocation. By utilizing weekly panel data since 2017, we diverge from climate-only models by incorporating human mobility and larval indices to enhance forecasting precision.
 \end{itemize}
 
 
