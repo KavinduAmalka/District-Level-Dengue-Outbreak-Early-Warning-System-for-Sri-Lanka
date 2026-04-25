@@ -128,26 +128,21 @@
 \section{Preliminary Literature Review}
 
 \subsection{Existing Research and Key Findings}
-[Summarize previous research related to your problem, including:
+Existing studies on dengue forecasting in Sri Lanka primarily emphasize the correlation between climatic variables and disease transmission. Researchers such as Malavige et al. (2021) and various epidemiological white papers identify rainfall, temperature, and relative humidity as the dominant drivers of Aedes mosquito breeding cycles.
 \begin{itemize}
-    \item Key findings from relevant studies
-    \item Strengths of existing approaches
-    \item Weaknesses and limitations
-    \item Different methodologies and their outcomes
+    \item \textbf{Methodologies \& Outcomes:} Current literature strongly advocates for Deep Learning architectures, specifically Long Short-Term Memory (LSTM) networks, due to their superior ability to model non-linear temporal patterns compared to traditional statistical methods like ARIMA.
+    \item \textbf{Strengths:} Existing approaches excel at establishing high-precision correlations between meteorological data and immediate outbreak peaks, often utilizing satellite-derived environmental data.
+    \item \textbf{Weaknesses:} A significant limitation is that most research remains theoretical or limited to mathematical modeling, with a distinct lack of functional, user-centric software tools or dashboards. Furthermore, there is a prominent "Western Province Bias," where findings from Colombo are often generalized to other ecological zones with different transmission dynamics.
 \end{itemize}
-]
 
 \subsection{Research Gap and Justification}
-[Critically analyze gaps in existing studies:
+A critical review of over 20 scholarly sources identifies a major gap in transforming complex predictive models into actionable public health tools that can be used for real-time decision-making.
 \begin{itemize}
-    \item What is missing or inadequate in current research?
-    \item How will your research address these gaps?
-    \item Why is your research necessary?
-    \item How does your work build on or diverge from prior work?
+    \item \textbf{Research Gaps:} Current research frequently isolates climatic factors, neglecting the combined socio-temporal impact of human mobility and localized biological larval indices. Additionally, there is no unified, software-driven dashboard that visualizes 4-week lead-time forecasts for multi-province surveillance.
+    \item \textbf{Addressing the Gaps:} Our research addresses these deficiencies by developing an \textbf{Integrated Predictive Dashboard}. Diverging from island-wide generalizations, we adopt a localized approach by selecting \textbf{one critical district from each of the nine provinces} for granular spatio-temporal analysis.
+    \item \textbf{Justification and Divergence:} This study is necessary to provide health authorities with a proactive resource allocation tool. By analyzing a comprehensive weekly panel dataset since 2017, our work builds on proven LSTM frameworks while incorporating mobility proxies and larval density reports to ensure the system is relevant to modern epidemiological trends.
 \end{itemize}
-]
 
-\noindent\textbf{Note:} Include references to at least 10 recent, credible scholarly sources (see References section).
 
 % --- 5. METHODOLOGY ---
 \section{Methodology}
