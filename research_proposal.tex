@@ -126,22 +126,21 @@ This research introduces a Dual-Stream Intelligence framework integrating human 
 \section{Preliminary Literature Review}
 
 \subsection{Existing Research and Key Findings}
-Dengue forecasting in Sri Lanka is heavily linked to climatic variables such as rainfall, temperature, and humidity, which drive Aedes mosquito breeding cycles.
+Dengue forecasting in Sri Lanka has been a significant area of study, with research consistently linking disease outbreaks to climatic factors such as rainfall, temperature, and humidity \cite{wickramathilaka2024}. These environmental variables directly influence the breeding cycles and population density of the Aedes mosquito \cite{withanage2018}.
 
 \begin{itemize}
-    \item \textbf{Methodologies:} Recent studies favor Deep Learning models like Long Short-Term Memory (LSTM) for capturing non-linear temporal patterns.
-    \item \textbf{Strengths:} Existing approaches accurately correlate meteorological data with immediate outbreak peaks.
-    \item \textbf{Weaknesses:} Most research remains theoretical, lacking functional software dashboards for real-time use. Additionally, a "Western Province Bias" exists, where findings from Colombo are often generalized across different ecological zones.
+    \item \textbf{Methodologies:} Recent research has shifted toward Deep Learning techniques, particularly Long Short-Term Memory (LSTM) networks. These models are favored for their ability to handle non-linear patterns and long-term dependencies in historical data \cite{albannoud2026, uduwanage2025}.
+    \item \textbf{Strengths:} Current forecasting models effectively demonstrate the correlation between weather fluctuations and immediate spikes in dengue cases, providing a foundation for early warning systems \cite{karasinghe2024}.
+    \item \textbf{Weaknesses:} However, much of the existing research remains theoretical and focused on model accuracy rather than practical use. There is a notable lack of functional software dashboards that health authorities can use in real-time \cite{wickramathilaka2024}. Additionally, many studies focus primarily on the Western Province, which may not accurately reflect the disease dynamics in other ecological zones of the country \cite{fernando2024}.
 \end{itemize}
 
 \subsection{Research Gap and Justification}
-A systematic review of prior work identifies a critical gap in translating predictive models into actionable software-driven tools for health authorities.
+A review of prior literature highlights a critical gap in turning high-accuracy predictive models into actionable, software-driven tools for the public health sector \cite{wickramathilaka2024}.
 
 \begin{itemize}
-    \item \textbf{Addressing the Gaps:} Our research addresses the lack of integrated surveillance tools by developing a \textbf{Functional Predictive Dashboard}. To ensure zonal relevance, we analyze \textbf{one critical district per province} instead of island-wide generalizations.
-    \item \textbf{Justification:} This study is necessary to provide proactive lead-time forecasts for resource allocation. By utilizing weekly panel data since 2017, we diverge from climate-only models by incorporating human mobility and larval indices to enhance forecasting precision.
+    \item \textbf{Addressing the Gaps:} This research addresses these limitations by developing a \textbf{Functional Predictive Dashboard}. To move beyond the common "Western Province Bias," our study analyzes \textbf{one critical district per province}, ensuring the tool is relevant and accurate for the entire country \cite{fernando2024}.
+    \item \textbf{Justification:} This study is justified by the urgent need for proactive forecasts that assist in efficient resource allocation during outbreaks \cite{rahulan2024}. By utilizing a weekly panel dataset since 2017, we diverge from climate-only models by also incorporating human mobility and PHI larval reports, which are crucial but often overlooked factors in dengue transmission \cite{delaguila2024}.
 \end{itemize}
-
 
 % --- 5. METHODOLOGY ---
 \section{Methodology}
@@ -226,23 +225,35 @@ The project timeline from initiation to completion is visualized below:
 \noindent\textit{Include all sources cited in your proposal using APA citation style. Minimum 10 recent scholarly sources required.}
 
 \begin{enumerate}
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
-    \item [Author(s)] ([Year]). Title of book. Publisher. DOI.
-    \item [Author(s)] ([Year]). Title of conference paper. In \textit{Conference Name} (pp. xx-xx).
-    \item [Organization]. ([Year]). Title of report. Retrieved from URL
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
-    \item [Author(s)] ([Year]). Title of article. \textit{Journal Name}, \textit{Volume}(Issue), pages. DOI.
+    % 1. Machine Learning Forecasting (Brazil Study)
+    \item Al Bannoud, M., Mendes, J. L., Sacay, R. S., Martins, T. D., Bresolin, I. R. A. P., & Lourenço, J. B. (2026). Machine Learning forecasting of dengue in São Paulo using virtual data augmentation and urban incident predictors. \textit{Acta Tropica}, \textit{275}, 107992. https://doi.org/10.1016/j.actatropica.2024.107992
+    
+    % 2. System Dynamics & Risk Mapping
+    \item Del-Águila-Mejía, J., Morilla, F., & Donado-Campos, J. D. M. (2024). A system dynamics modelling and analytical framework for imported dengue outbreak surveillance and risk mapping. \textit{Acta Tropica}, \textit{257}, 107304. https://doi.org/10.1016/j.actatropica.2024.107304
+    
+    % 3. Systematic Review (Sri Lanka 2000-2020)
+    \item Fernando, L., Wickramasinghe, V. P., Kalra, P., Kastner, R., & Gallagher, E. (2024). Epidemiological burden of dengue in Sri Lanka: A systematic review of literature from 2000-2020. \textit{IJID Regions}, \textit{13}, 100436. https://doi.org/10.1016/j.ijregi.2024.100436
+    
+    % 4. Modified ARIMA Modeling (Sri Lanka)
+    \item Karasinghe, N., Peiris, S., Jayathilaka, R., & Dharmasena, T. (2024). Forecasting weekly dengue incidence in Sri Lanka: Modified Autoregressive Integrated Moving Average modeling approach. \textit{PLOS ONE}, \textit{19}(3), e0299953. https://doi.org/10.1371/journal.pone.0299953
+    
+    % 5. Case Study (Gampaha District)
+    \item Rahulan, K., Ranagala, R. M., & Paul Roshan, G. (2024). Dengue Outbreak Control and Prevention: A Case Study of Gampaha District, Sri Lanka. \textit{The Sri Lanka Journal of Medical Administration}, \textit{25}(1), 12-21. https://doi.org/10.4038/sljma.v25i1.5477
+    
+    % 6. ML Prediction (University of Peradeniya Study)
+    \item Uduwanage, H. U., Konara, K. M. S. L., Mihiranga, G. D. R., Karunarathna, S. N., Noordeen, F., & Ekanayake, I. (2025). Prediction of dengue outbreaks in Sri Lanka using machine learning techniques. \textit{Sri Lanka Journal of Medicine}, \textit{34}(1), 15-26. https://doi.org/10.4038/sljm.v34i1.568
+    
+    % 7. White Paper (University of Moratuwa)
+    \item Wickramathilaka, S., & Munasinghe, A. (2024). \textit{Epidemiological pattern recognition and disease forecasting for dengue in Sri Lanka} [White paper]. University of Moratuwa.
+    
+    % 8. Gampaha Forecasting Model (Basic Model)
+    \item Withanage, G. P., Viswakula, S. D., Silva Gunawardena, Y. I. N., & Hapugoda, M. D. (2018). A forecasting model for dengue incidence in the District of Gampaha, Sri Lanka. \textit{Parasites \& Vectors}, \textit{11}(1), 262. https://doi.org/10.1186/s13071-018-2828-2
+    
+    % 9. Interpretable Modeling (Singapore Study)
+    \item Zhang, Z., Hu, S., Hu, J., Hao, Z., & Huang, J. (2026). Decoding multi-frequency scale climate-dengue dynamics: An interpretable modeling framework. \textit{Urban Climate}, \textit{65}, 102734. https://doi.org/10.1016/j.uclim.2024.102734
+    
+    % 10. One Health Concept (Dengue Control)
+    \item Feng, X., Jiang, N., Zheng, J., Zhu, Z., Chen, J., & Duan, L. (2024). Advancing knowledge of One Health in China: Lessons for One Health from China's dengue control and prevention programs. \textit{Science in One Health}, \textit{3}, 100087. https://doi.org/10.1016/j.soh.2024.100087
 \end{enumerate}
-
-\noindent\textbf{Guidelines:}
-\begin{itemize}
-    \item Use APA citation style for all references and in-text citations
-    \item Ensure references are relevant, credible, and up-to-date
-    \item Minimum 10 recent scholarly sources required
-\end{itemize}
 
 \end{document}
