@@ -86,18 +86,19 @@
 % --- 2. PROBLEM STATEMENT ---
 \section{Problem Statement}
 
-\textit{Clearly articulate the specific problem within the research area that needs addressing.}
+\subsection{The Core Challenge: Reactive vs. Proactive}
+Dengue management in Sri Lanka is largely reactive, triggering interventions only after infection rates spike. While countries like Singapore and Brazil use Machine Learning (ML) to anticipate outbreaks, Sri Lanka lacks a localized, proactive early warning system that provides the necessary lead time for effective prevention.
 
-[Define the core problem:
+\subsection{Key Gaps and Challenges}
 \begin{itemize}
-    \item What is the specific problem/challenge?
-    \item What gaps or inefficiencies exist in current approaches?
-    \item What unresolved questions need to be addressed?
-    \item Why is this problem significant?
+    \item \textbf{Data Fragmentation:} Existing models rely primarily on rainfall, failing to integrate multidimensional factors like Human Mobility and PHI Larval Surveillance data for high-accuracy predictions.
+    \item \textbf{Geographical Oversimplification:} Literature often overlooks the distinct dengue-climate dynamics between Wet-Zone and Dry-Zone districts and the separate impacts of the Southwest and Northeast monsoons.
+    \item \textbf{Lead-Time Inefficiency:} Without a district-specific lag analysis, Public Health Inspectors (PHIs) cannot time their vector control interventions precisely, resulting in inefficient resource allocation.
+    \item \textbf{Technical Limitations:} Traditional models (e.g., ARIMA) struggle with the non-linear temporal patterns of long-term data. Advanced architectures like LSTM and XGBoost are essential to model these complex 7-year longitudinal relationships.
 \end{itemize}
-]
 
-\noindent\textit{Make the problem statement concise yet impactful.}
+\subsection{Proposed Solution: Actionable Prevention}
+This research introduces a Dual-Stream Intelligence framework integrating human mobility and PHI larval reports with micro-climatic data. By utilizing LSTM and XGBoost architectures, the system converts complex epidemiological patterns into a 4-week-ahead predictive dashboard. This tool transforms raw data into actionable insights, empowering health authorities to transition from crisis management to proactive strategic prevention.
 
 % --- 3. OBJECTIVES ---
 \section{Objectives}
