@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.21)  25 APR 2026 19:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.21)  25 APR 2026 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,27 +291,32 @@ Overfull \hbox (11.15413pt too wide) in paragraph at lines 32--40
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94     \item W
-                hat gaps or inefficiencies exist in current approaches? [1] [2] [3] [4] [5] [6] (research_proposal.aux)
+l.91 
+      [1]
+Overfull \hbox (5.01405pt too wide) in paragraph at lines 95--96
+[]\OT1/cmr/bx/n/12 Geographical Over-sim-pli-fi-ca-tion: \OT1/cmr/m/n/12 Lit-er-a-ture of-ten over-looks the dis-tinct dengue-
+ []
+
+[2] [3] [4] [5] [6] (research_proposal.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `research_proposal.out' has not changed.
-(rerunfilecheck)             Checksum: BDCFB89AC59A1954E205F6C33F5E448C;2819.
+(rerunfilecheck)             Checksum: E5FD0FBAF6ED627E8BEDA618C76DAADE;3551.
  ) 
 Here is how much of TeX's memory you used:
- 9556 strings out of 467871
- 149869 string characters out of 5419828
- 578392 words of memory out of 5000000
- 38313 multiletter control sequences out of 15000+600000
+ 9562 strings out of 467871
+ 149959 string characters out of 5419828
+ 579395 words of memory out of 5000000
+ 38316 multiletter control sequences out of 15000+600000
  633265 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,456b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,617b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on research_proposal.pdf (7 pages, 81637 bytes).
+Output written on research_proposal.pdf (7 pages, 85469 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
