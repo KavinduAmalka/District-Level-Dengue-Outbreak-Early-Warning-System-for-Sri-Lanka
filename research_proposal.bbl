@@ -137,11 +137,6 @@
       \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Tropica}
@@ -150,9 +145,6 @@
       \field{year}{2026}
       \field{pages}{107992}
       \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.actatropica.2024.107992
-      \endverb
     \endentry
     \entry{chen2026}{article}{}{}
       \name{author}{2}{}{%
@@ -547,9 +539,6 @@
       \field{year}{2018}
       \field{pages}{262}
       \range{pages}{1}
-      \verb{doi}
-      \verb 10.1186/s13071-018-2828-2
-      \endverb
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
@@ -618,9 +607,6 @@
       \verb 10.1016/j.actatropica.2026.107992
       \endverb
     \endentry
-    \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global/global}
     \entry{albannoud2026}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
@@ -674,11 +660,6 @@
       \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Tropica}
@@ -687,9 +668,6 @@
       \field{year}{2026}
       \field{pages}{107992}
       \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.actatropica.2024.107992
-      \endverb
     \endentry
     \entry{chen2026}{article}{}{}
       \name{author}{2}{}{%
@@ -1084,9 +1062,6 @@
       \field{year}{2018}
       \field{pages}{262}
       \range{pages}{1}
-      \verb{doi}
-      \verb 10.1186/s13071-018-2828-2
-      \endverb
     \endentry
   \enddatalist
 \endrefsection
