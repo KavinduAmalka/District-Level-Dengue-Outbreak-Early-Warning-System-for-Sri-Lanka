@@ -9,4 +9,5 @@
 *.out
 *.bbl
 *.blg
-
+*.bcf
+*.run.xml
