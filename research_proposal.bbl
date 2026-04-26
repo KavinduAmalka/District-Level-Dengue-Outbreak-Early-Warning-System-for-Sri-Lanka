@@ -19,50 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{bala2024}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=c4a65664dd6bf8cd4bdbb0f5d9a82f8d}{%
-           family={Bala},
-           familyi={B\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=527e6a66913975262c0b61a2572b6de5}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d14ace7c841f7fc26a26ecf1b8160e6f}{%
-           family={Mehta},
-           familyi={M\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{feba1c2b1dfff0558e30d7730c61c8c8}
-      \strng{fullhash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{fullhashraw}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{bibnamehash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{authorbibnamehash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{authornamehash}{feba1c2b1dfff0558e30d7730c61c8c8}
-      \strng{authorfullhash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{authorfullhashraw}{2989a8e3409bc96ea51c665e6b165c3a}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Banking and Finance Technology}
-      \field{number}{4}
-      \field{title}{Personalization strategies for banking chatbots and customer satisfaction}
-      \field{volume}{9}
-      \field{year}{2024}
-      \field{pages}{95\bibrangedash 112}
-      \range{pages}{18}
-    \endentry
     \entry{albannoud2026}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
@@ -124,6 +80,52 @@
       \field{pages}{107992}
       \range{pages}{1}
     \endentry
+    \entry{delaguila2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e450eb3eb70fffa2e8ce78553da4d886}{%
+           family={Del-Águila-Mejía},
+           familyi={D\bibinithyphendelim Á\bibinithyphendelim M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71a0a40e6b90f6561f583c49e2c4f0e4}{%
+           family={Morilla},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31b34a33834611205ef3097f8a90bace}{%
+           family={Donado-Campos},
+           familyi={D\bibinithyphendelim C\bibinitperiod},
+           given={J.\bibnamedelimi D.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{fullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{fullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{bibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorbibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authornamehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{authorfullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorfullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Tropica}
+      \field{title}{A system dynamics modelling and analytical framework for imported dengue outbreak surveillance and risk mapping}
+      \field{volume}{257}
+      \field{year}{2024}
+      \field{pages}{107304}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.actatropica.2024.107304
+      \endverb
+    \endentry
     \entry{fernando2024}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=d182b8560e863e853c381ab7cebbd28b}{%
@@ -182,50 +184,6 @@
       \verb 10.1016/j.ijregi.2024.100436
       \endverb
     \endentry
-    \entry{kaakandikar2025}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=54cb6a0be72e47638864c8ede57cbe6c}{%
-           family={Kaakandikar},
-           familyi={K\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cb8efdc5c4ba9f58f2c52b94e3a180f2}{%
-           family={Deshpande},
-           familyi={D\bibinitperiod},
-           given={S.\bibnamedelimi N.},
-           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=66f21cfc395a2745a344399c3057a238}{%
-           family={Raj},
-           familyi={R\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a485bfc241dcca0b64daefbbf15bd237}
-      \strng{fullhash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{fullhashraw}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{bibnamehash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{authorbibnamehash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{authornamehash}{a485bfc241dcca0b64daefbbf15bd237}
-      \strng{authorfullhash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{authorfullhashraw}{eb7584e531629d53b99e8711cfcdcd59}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Consumer Banking Research}
-      \field{number}{1}
-      \field{title}{Customer segmentation and chatbot impact assessment in retail banking}
-      \field{volume}{11}
-      \field{year}{2025}
-      \field{pages}{70\bibrangedash 88}
-      \range{pages}{19}
-    \endentry
     \entry{karasinghe2024}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=17ac00e17303953e534f8bd0064050d6}{%
@@ -279,43 +237,52 @@
       \verb 10.1371/journal.pone.0299953
       \endverb
     \endentry
-    \entry{shrimali2024}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=26bb62000d45561a766d8af77da5fd9d}{%
-           family={Shrimali},
-           familyi={S\bibinitperiod},
+    \entry{rahulan2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e7d47d2f50b5a216ab5bef0b3da1d72}{%
+           family={Rahulan},
+           familyi={R\bibinitperiod},
            given={K.},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0973e57a90c79de1ead0143b0bb42de1}{%
-           family={Patel},
-           familyi={P\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
+        {{un=0,uniquepart=base,hash=4134080e321dd833e3d0ab78d319c05c}{%
+           family={Ranagala},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef7af15f4ba40fce3cebe803e4db6df6}{%
+           family={Roshan},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi Paul},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{fullhash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{fullhashraw}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{bibnamehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authorbibnamehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authornamehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authorfullhash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authorfullhashraw}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \strng{namehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{fullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{fullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{bibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorbibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authornamehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{authorfullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorfullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Financial Services AI Review}
-      \field{number}{2}
-      \field{title}{Large language models and hybrid AI for conversational banking assistants}
-      \field{volume}{5}
+      \field{journaltitle}{The Sri Lanka Journal of Medical Administration}
+      \field{number}{1}
+      \field{title}{Dengue Outbreak Control and Prevention: A Case Study of Gampaha District, Sri Lanka}
+      \field{volume}{25}
       \field{year}{2024}
-      \field{pages}{33\bibrangedash 48}
-      \range{pages}{16}
+      \field{pages}{12\bibrangedash 21}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.4038/sljma.v25i1.5477
+      \endverb
     \endentry
     \entry{uduwanage2025}{article}{}{}
       \name{author}{6}{}{%
@@ -469,50 +436,6 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
-    \entry{bala2024}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=c4a65664dd6bf8cd4bdbb0f5d9a82f8d}{%
-           family={Bala},
-           familyi={B\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=527e6a66913975262c0b61a2572b6de5}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d14ace7c841f7fc26a26ecf1b8160e6f}{%
-           family={Mehta},
-           familyi={M\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{feba1c2b1dfff0558e30d7730c61c8c8}
-      \strng{fullhash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{fullhashraw}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{bibnamehash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{authorbibnamehash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{authornamehash}{feba1c2b1dfff0558e30d7730c61c8c8}
-      \strng{authorfullhash}{2989a8e3409bc96ea51c665e6b165c3a}
-      \strng{authorfullhashraw}{2989a8e3409bc96ea51c665e6b165c3a}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Banking and Finance Technology}
-      \field{number}{4}
-      \field{title}{Personalization strategies for banking chatbots and customer satisfaction}
-      \field{volume}{9}
-      \field{year}{2024}
-      \field{pages}{95\bibrangedash 112}
-      \range{pages}{18}
-    \endentry
     \entry{albannoud2026}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
@@ -574,6 +497,52 @@
       \field{pages}{107992}
       \range{pages}{1}
     \endentry
+    \entry{delaguila2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e450eb3eb70fffa2e8ce78553da4d886}{%
+           family={Del-Águila-Mejía},
+           familyi={D\bibinithyphendelim Á\bibinithyphendelim M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71a0a40e6b90f6561f583c49e2c4f0e4}{%
+           family={Morilla},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31b34a33834611205ef3097f8a90bace}{%
+           family={Donado-Campos},
+           familyi={D\bibinithyphendelim C\bibinitperiod},
+           given={J.\bibnamedelimi D.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{fullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{fullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{bibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorbibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authornamehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{authorfullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorfullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Tropica}
+      \field{title}{A system dynamics modelling and analytical framework for imported dengue outbreak surveillance and risk mapping}
+      \field{volume}{257}
+      \field{year}{2024}
+      \field{pages}{107304}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.actatropica.2024.107304
+      \endverb
+    \endentry
     \entry{fernando2024}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=d182b8560e863e853c381ab7cebbd28b}{%
@@ -632,50 +601,6 @@
       \verb 10.1016/j.ijregi.2024.100436
       \endverb
     \endentry
-    \entry{kaakandikar2025}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=54cb6a0be72e47638864c8ede57cbe6c}{%
-           family={Kaakandikar},
-           familyi={K\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cb8efdc5c4ba9f58f2c52b94e3a180f2}{%
-           family={Deshpande},
-           familyi={D\bibinitperiod},
-           given={S.\bibnamedelimi N.},
-           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=66f21cfc395a2745a344399c3057a238}{%
-           family={Raj},
-           familyi={R\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a485bfc241dcca0b64daefbbf15bd237}
-      \strng{fullhash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{fullhashraw}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{bibnamehash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{authorbibnamehash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{authornamehash}{a485bfc241dcca0b64daefbbf15bd237}
-      \strng{authorfullhash}{eb7584e531629d53b99e8711cfcdcd59}
-      \strng{authorfullhashraw}{eb7584e531629d53b99e8711cfcdcd59}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Consumer Banking Research}
-      \field{number}{1}
-      \field{title}{Customer segmentation and chatbot impact assessment in retail banking}
-      \field{volume}{11}
-      \field{year}{2025}
-      \field{pages}{70\bibrangedash 88}
-      \range{pages}{19}
-    \endentry
     \entry{karasinghe2024}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=17ac00e17303953e534f8bd0064050d6}{%
@@ -729,43 +654,52 @@
       \verb 10.1371/journal.pone.0299953
       \endverb
     \endentry
-    \entry{shrimali2024}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=26bb62000d45561a766d8af77da5fd9d}{%
-           family={Shrimali},
-           familyi={S\bibinitperiod},
+    \entry{rahulan2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e7d47d2f50b5a216ab5bef0b3da1d72}{%
+           family={Rahulan},
+           familyi={R\bibinitperiod},
            given={K.},
            giveni={K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0973e57a90c79de1ead0143b0bb42de1}{%
-           family={Patel},
-           familyi={P\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod},
+        {{un=0,uniquepart=base,hash=4134080e321dd833e3d0ab78d319c05c}{%
+           family={Ranagala},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef7af15f4ba40fce3cebe803e4db6df6}{%
+           family={Roshan},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi Paul},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{fullhash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{fullhashraw}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{bibnamehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authorbibnamehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authornamehash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authorfullhash}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \strng{authorfullhashraw}{5d85cfef0a4af8c55ae7e54c77f366d4}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \strng{namehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{fullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{fullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{bibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorbibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authornamehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{authorfullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorfullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Financial Services AI Review}
-      \field{number}{2}
-      \field{title}{Large language models and hybrid AI for conversational banking assistants}
-      \field{volume}{5}
+      \field{journaltitle}{The Sri Lanka Journal of Medical Administration}
+      \field{number}{1}
+      \field{title}{Dengue Outbreak Control and Prevention: A Case Study of Gampaha District, Sri Lanka}
+      \field{volume}{25}
       \field{year}{2024}
-      \field{pages}{33\bibrangedash 48}
-      \range{pages}{16}
+      \field{pages}{12\bibrangedash 21}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.4038/sljma.v25i1.5477
+      \endverb
     \endentry
     \entry{uduwanage2025}{article}{}{}
       \name{author}{6}{}{%
