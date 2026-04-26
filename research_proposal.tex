@@ -107,7 +107,7 @@ Dengue forecasting in Sri Lanka has been a significant area of study, with resea
 
 \begin{itemize}
     \item \textbf{Methodologies:} Recent research has shifted toward Deep Learning techniques, particularly Long Short-Term Memory (LSTM) networks. These models are favored for their ability to handle non-linear patterns and long-term dependencies in historical data \parencite{albannoud2026, uduwanage2025}.
-    \item \textbf{Strengths:} Current forecasting models effectively demonstrate the correlation between weather fluctuations and immediate spikes in dengue cases, providing a foundation for early warning systems \parencite{karasinghe2024}.
+    \item \textbf{Strengths:} Current forecasting models effectively demonstrate the correlation between weather fluctuations and immediate spikes in dengue cases, providing a foundation for health sectors \parencite{karasinghe2024}.
     \item \textbf{Weaknesses:} However, much of the existing research remains theoretical and focused on model accuracy rather than practical use. There is a notable lack of functional software dashboards that health authorities can use in real-time \parencite{wickramathilaka2024}. Additionally, many studies focus primarily on the Western Province, which may not accurately reflect the disease dynamics in other ecological zones of the country \parencite{fernando2024}.
 \end{itemize}
 
@@ -123,38 +123,27 @@ A review of prior literature highlights a critical gap in turning high-accuracy 
 \section{Methodology}
 
 \subsection{Research Approach}
-\textit{Define the research methods and logical steps you will take to address the problem.}
+This study employs a \textbf{Quantitative Modeling} and \textbf{System Development} approach. We focus on integrating multi-source data through a hybrid machine learning design to enable proactive dengue surveillance across all nine provinces. This localized strategy addresses the "Western Province Bias" while ensuring a manageable nationwide scope \parencite{fernando2024}.
 
-[Describe your overall approach:
-\begin{itemize}
-    \item Research design (e.g., experimental, case study, modeling, survey)
-    \item Why this approach is appropriate
-    \item Justification for methodological choices
-\end{itemize}
-]
+\subsection{Data Strategy and Implementation Plan}
+The research follows a five-phase execution plan to transition from multi-source data collection to a functional software output:
 
-\subsection{Data Collection and Analysis}
-\textit{Detail the approach you will use to collect and analyze data.}
+\begin{enumerate}
+    \item \textbf{Data Collection:} 
+    \begin{itemize}
+        \item \textbf{Epidemiological:} Weekly cases from \textbf{IDH Hospital} (2017--2026) \parencite{wickramathilaka2024}.
+        \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the \textbf{Met Dept} \parencite{withanage2018}.
+        \item \textbf{Mobility \& Larval:} Commuter flow from hubs (\textbf{Makumbura, Kadawatha, Fort}) and PHI larval indices \parencite{karasinghe2024}.
+    \end{itemize}
 
-[Specify:
-\begin{itemize}
-    \item Data sources and collection methods
-    \item Data types and characteristics
-    \item Data analysis techniques
-    \item Tools and software to be used (e.g., Python, TensorFlow, R)
-\end{itemize}
-]
+    \item \textbf{Preprocessing:} Normalizing and merging diverse data streams into a weekly panel dataset using \textbf{Python (Pandas)}. Key features include 4-week weather lags and transit risk indices.
 
-\subsection{Plan for Achieving Research Objectives}
-\textit{Provide a clear plan for achieving the research objectives.}
+    \item \textbf{Modeling:} Comparing \textbf{LSTM} (temporal patterns), \textbf{LightGBM}, and \textbf{XGBoost} (spatial variances) to identify the most robust architecture \parencite{albannoud2026, uduwanage2025}.
 
-[Detail:
-\begin{itemize}
-    \item Step-by-step approach aligned with objectives
-    \item Tools, technologies, and techniques
-    \item Expected outputs and deliverables for each phase
-\end{itemize}
-]
+    \item \textbf{Evaluation:} Validating 4-week lead-time accuracy using \textbf{MAE and RMSE} metrics to ensure reliable forecasting for health authorities.
+
+    \item \textbf{Implementation:} Developing a \textbf{React.js} dashboard featuring spatial risk maps with \textbf{Hotspot Marking} and predictive trend alerts for outbreak prevention.
+\end{enumerate}
 
 % --- 6. PROJECT SCHEDULE ---
 \section{Project Schedule}

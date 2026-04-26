@@ -19,71 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{bannoud2026}{article}{}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=941e63454be1482c660701947af9a87d}{%
-           family={Bannoud},
-           familyi={B\bibinitperiod},
-           given={M.\bibnamedelimi A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3168cbaeb15047b770062c09f1ae864}{%
-           family={Mendes},
-           familyi={M\bibinitperiod},
-           given={J.\bibnamedelimi L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c35a19e9cf54284163428388a954493e}{%
-           family={Sacay},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi S.},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0b39d6b7b0cf34181d8f24f19c6048f1}{%
-           family={Martins},
-           familyi={M\bibinitperiod},
-           given={T.\bibnamedelimi D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4cdcbe1b575650ed53ff251ae10f6844}{%
-           family={Bresolin},
-           familyi={B\bibinitperiod},
-           given={I.\bibnamedelimi R.\bibnamedelimi A.\bibnamedelimi P.},
-           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2861258431ab944e1c1c30ed608f34d}{%
-           family={Lourenço},
-           familyi={L\bibinitperiod},
-           given={J.\bibnamedelimi B.},
-           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{fee04811dc6c67df9b04540df23f40e4}
-      \strng{fullhash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{fullhashraw}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{bibnamehash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{authorbibnamehash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{authornamehash}{fee04811dc6c67df9b04540df23f40e4}
-      \strng{authorfullhash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{authorfullhashraw}{b9035b59a07805f4a394bef36967d5f9}
-      \field{extraname}{1}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Acta Tropica}
-      \field{title}{Machine Learning forecasting of dengue in São Paulo using virtual data augmentation and urban incident predictors: Addressing the exceptional surge of cases in 2024}
-      \field{volume}{275}
-      \field{year}{2026}
-      \field{pages}{107992}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.actatropica.2026.107992
-      \endverb
-    \endentry
     \entry{albannoud2026}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
@@ -1064,6 +999,8 @@
       \range{pages}{1}
     \endentry
   \enddatalist
+  \missing{bannoud2026}
+  \missing{chen2026}
 \endrefsection
 \endinput
 
