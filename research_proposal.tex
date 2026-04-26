@@ -7,6 +7,8 @@
 \usepackage{array}
 \usepackage{setspace}
 \usepackage{xcolor}
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
 \usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{references.bib}
 \usepackage{hyperref}
@@ -48,42 +50,15 @@
 
 
 % --- 1. INTRODUCTION ---
+
 \section{Introduction}
 
-\subsection{Background}
-\textit{Describe the basic facts and provide context about the research area.}
+Dengue fever is a serious mosquito-borne disease that has become a huge public health issue in Sri Lanka. The spread of the virus is closely tied to our country's weather, especially the Southwest and Northeast monsoons. Over the years, we have seen massive outbreaks that easily overwhelm our local hospitals. Currently, the way we track dengue is mostly reactive - health officials rely heavily on clinical reports of people who are already sick, rather than predicting where the mosquitoes will strike next \parencite{karasinghe2024}.
 
-[Provide context about dengue in Sri Lanka. Include:
-\begin{itemize}
-    \item Current prevalence and impact of dengue
-    \item Disease characteristics and transmission
-    \item Geographic distribution in Sri Lanka
-    \item Seasonal patterns and risk factors
-\end{itemize}
-]
+Moving from a reactive approach to a proactive one is really important for saving resources and lives. By using modern technology like Machine Learning (ML), we can predict these outbreaks before they happen. Recent research in Sri Lanka has shown that analyzing weather parameters like temperature, wind speed, and precipitation with ML techniques can successfully forecast outbreaks across multiple districts \parencite{uduwanage2025}. Furthermore, global studies prove that adding human mobility data into these models makes early warning systems highly accurate in detecting where the disease will travel next \parencite{chen2026}.
 
-\subsection{Importance}
-\textit{Highlight the significance of the research for industry practices or advancing knowledge.}
+This research is primarily motivated by the severe impact dengue has on so many people in our communities, and our group wants to use our software engineering skills to make a real difference. While some forecasting models exist, many struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{bannoud2026}. Our project aims to fill this gap by building a dual-stream predictive model—which predicts both the exact number of expected cases and warns if a severe outbreak threshold is crossed. By deploying this as an interactive 4-week-ahead dashboard, we can give public health workers a practical tool to see where dengue will hit next and stop it in time.
 
-[Explain why this research matters:
-\begin{itemize}
-    \item Public health impact and burden of disease
-    \item Current limitations in outbreak prediction
-    \item Potential benefits of early warning systems
-    \item Industry or societal need
-\end{itemize}
-]
-
-\subsection{Motivation}
-\textit{Explain why this research area is of interest to you and its potential contributions.}
-
-[Describe personal/team motivation:
-\begin{itemize}
-    \item Why your team chose this topic
-    \item Potential contributions to the field
-    \item Practical solutions you aim to provide
-\end{itemize}
-]
 
 % --- 2. PROBLEM STATEMENT ---
 \section{Problem Statement}
