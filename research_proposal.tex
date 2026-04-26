@@ -25,24 +25,24 @@
     \vspace*{1cm}
     {\Large \textbf{Research Project Proposal}}\\[1.5cm]
 
-    
+
     {\huge \textbf{District-Level Dengue Outbreak Early Warning System for Sri Lanka}}\\[3cm]
-    
+
     \textbf{Group Number: Group 10}\\[5cm]
-    
+
     {\textbf{Group Members:}}\\[0.3cm]
     \begin{table}[h]
         \centering
         \begin{tabular}{|l|l|l|}
-        \hline
-        \textbf{Name} & \textbf{Student ID} \\ \hline
-        Kavindu Amalka & SE/2021/008 \\ \hline
-        Hiruni Imasha & SE/2021/053 \\ \hline
-        Sandaru Mihiran & SE/2021/010 \\ \hline
-        Sachini Weerakkody & SE/2021/018 \\ \hline
+            \hline
+            \textbf{Name}      & \textbf{Student ID} \\ \hline
+            Kavindu Amalka     & SE/2021/008         \\ \hline
+            Hiruni Imasha      & SE/2021/053         \\ \hline
+            Sandaru Mihiran    & SE/2021/010         \\ \hline
+            Sachini Weerakkody & SE/2021/018         \\ \hline
         \end{tabular}
     \end{table}
-    
+
     \vfill
     Date: \today
 \end{titlepage}
@@ -83,20 +83,24 @@ This research introduces a Dual-Stream Intelligence framework integrating human 
 \textit{Outline the specific goals your research aims to achieve.}
 
 \subsection{Primary Objective}
-[State your main research goal clearly and measurably]
+The primary goal of this research is to develop a proactive, data-driven dengue early warning and risk-mapping system for Sri Lanka.
+By leveraging automated surveillance, the project aims to empower health authorities to identify potential outbreaks in advance. This ensures timely interventions and optimized resource allocation to significantly mitigate public health risks across the country.
 
 \subsection{Secondary Objectives}
 \begin{enumerate}
-    \item Objective 1: Specific, measurable goal
-    \item Objective 2: Specific, measurable goal
-    \item Objective 3: Specific, measurable goal
-    \item Objective 4: Specific, measurable goal
+    \item \textbf{Data Fusion:} Integrate historical cases, climate, mobility, and PHI larval data into a single unified framework.
+    \item \textbf{Mobility Modeling:} Incorporate bus/train network patterns to predict inter-district disease spread.
+    \item \textbf{Dual-Function ML:} Develop hybrid models for both case forecasting (Regression) and risk-level categorization (Classification).
+    \item \textbf{Regional Nuance:} Capture Wet/Dry zone variations and establish district-specific climate-to-outbreak time ~ lags.
+    \item \textbf{Decision Support:} Build a digital dashboard to translate technical forecasts into prioritized field tasks for PHIs.
+
 \end{enumerate}
 
 \noindent\textbf{Guidelines:}
 \begin{itemize}
-    \item Explain the benefits or impacts of your research (e.g., improved understanding, enhanced performance, practical solutions)
-    \item Ensure objectives are clear, measurable, and directly address the problem statement
+    \item \textbf{Early Intervention:} Enables a ``4-week lead time'' to stop outbreaks before they escalate.
+    \item \textbf{Optimized Resources:} Directs cleanup and inspection teams to high-risk clusters with precision.
+    \item \textbf{Policy Support:} Provides an evidence-based, scalable framework for national data-driven healthcare.
 \end{itemize}
 
 % --- 4. PRELIMINARY LITERATURE REVIEW ---
@@ -130,11 +134,11 @@ The research follows a five-phase execution plan to transition from multi-source
 
 \begin{enumerate}
     \item \textbf{Data Collection:} (2017--2026) \parencite{wickramathilaka2024}.
-    \begin{itemize}
-        \item \textbf{Epidemiological:} Weekly cases from \textbf{IDH Hospital} and \textbf{Epidemiology Unit} for 2017-2026 \parencite{wickramathilaka2024}.
-        \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the \textbf{Met Dept} \parencite{withanage2018}.
-        \item \textbf{Mobility \& Larval:} Commuter flow from hubs (\textbf{Makumbura, Kadawatha, Fort}) and PHI larval indices \parencite{karasinghe2024}.
-    \end{itemize}
+          \begin{itemize}
+              \item \textbf{Epidemiological:} Weekly cases from \textbf{IDH Hospital} and \textbf{Epidemiology Unit} for 2017-2026 \parencite{wickramathilaka2024}.
+              \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the \textbf{Met Dept} \parencite{withanage2018}.
+              \item \textbf{Mobility \& Larval:} Commuter flow from hubs (\textbf{Makumbura, Kadawatha, Fort}) and PHI larval indices \parencite{karasinghe2024}.
+          \end{itemize}
 
     \item \textbf{Preprocessing:} Normalizing and merging diverse data streams into a weekly panel dataset using \textbf{Python (Pandas)}. Key features include 4-week weather lags and transit risk indices.
 
@@ -154,19 +158,19 @@ The research follows a five-phase execution plan to transition from multi-source
 The project timeline from initiation to completion is visualized below:
 
 \begin{table}[h]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|c|c|c|c|c|c|}
-\hline
-\textbf{Milestone/Phase} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{Member(s) In-charge} \\ \hline
-[Phase 1: Literature Review] & X &  &  &  &  & [Member Names] \\ \hline
-[Phase 2: Data Collection/Prep] &  & X &  &  &  & [Member Names] \\ \hline
-[Phase 3: Model Development] &  &  & X &  &  & [Member Names] \\ \hline
-[Phase 4: Testing \& Validation] &  &  &  & X &  & [Member Names] \\ \hline
-[Phase 5: Final Documentation] &  &  &  &  & X & [Member Names] \\ \hline
-\end{tabular}%
-}
-\caption{Project Timeline and Milestones}
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|c|c|c|c|c|c|}
+            \hline
+            \textbf{Milestone/Phase} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{Member(s) In-charge} \\ \hline
+                                                                                                                                             [Phase 1: Literature Review] & X &  &  &  &  & [Member Names] \\ \hline
+                                                                                                                                                                                                              [Phase 2: Data Collection/Prep] &  & X &  &  &  & [Member Names] \\ \hline
+                                                                                                                                                                                                                                                                                  [Phase 3: Model Development] &  &  & X &  &  & [Member Names] \\ \hline
+                                                                                                                                                                                                                                                                                                                                                   [Phase 4: Testing \& Validation] &  &  &  & X &  & [Member Names] \\ \hline
+                                                                                                                                                                                                                                                                                                                                                                                                                        [Phase 5: Final Documentation] &  &  &  &  & X & [Member Names] \\ \hline
+        \end{tabular}%
+    }
+    \caption{Project Timeline and Milestones}
 \end{table}
 
 \subsection{Milestone Definitions}
