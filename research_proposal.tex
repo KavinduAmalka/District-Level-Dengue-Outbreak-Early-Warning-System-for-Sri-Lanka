@@ -53,11 +53,12 @@
 
 \section{Introduction}
 
-Dengue fever is a serious mosquito-borne disease that has become a huge public health issue in Sri Lanka. The spread of the virus is closely tied to our country's weather, especially the Southwest and Northeast monsoons. Over the years, we have seen massive outbreaks that easily overwhelm our local hospitals. Currently, the way we track dengue is mostly reactive - health officials rely heavily on clinical reports of people who are already sick, rather than predicting where the mosquitoes will strike next \parencite{karasinghe2024}.
+Dengue fever is a severe, mosquito-borne viral disease that has evolved into a hyper-endemic public health crisis in Sri Lanka. The virus is primarily transmitted by Aedes aegypti and Aedes albopictus mosquitoes, and its spread is closely tied to our country's weather, especially the Southwest and Northeast monsoons. Currently, local dengue tracking is highly reactive, relying on delayed clinical reports of sick patients rather than predicting where mosquitoes will strike next \parencite{karasinghe2024}.
 
-Moving from a reactive approach to a proactive one is really important for saving resources and lives. By using modern technology like Machine Learning (ML), we can predict these outbreaks before they happen. Recent research in Sri Lanka has shown that analyzing weather parameters like temperature, wind speed, and precipitation with ML techniques can successfully forecast outbreaks across multiple districts \parencite{uduwanage2025}. Furthermore, global studies prove that adding human mobility data into these models makes early warning systems highly accurate in detecting where the disease will travel next \parencite{zhang2026}.
+Transitioning to a proactive approach is vital for saving resources and lives. Machine Learning (ML) can successfully forecast these outbreaks using weather parameters like temperature and precipitation \parencite{uduwanage2025}. Furthermore, adding human mobility data to these models makes early warning systems highly accurate in detecting disease spread \parencite{chen2026}.
 
-This research is primarily motivated by the severe impact dengue has on so many people in our communities, and our group wants to use our software engineering skills to make a real difference. While some forecasting models exist, many struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{albannoud2026}. Our project aims to fill this gap by building a dual-stream predictive model—which predicts both the exact number of expected cases and warns if a severe outbreak threshold is crossed. By deploying this as an interactive 4-week-ahead dashboard, we can give public health workers a practical tool to see where dengue will hit next and stop it in time.
+Motivated by the severe impact of dengue on our communities, our group aims to use software engineering to fill the gaps in current forecasting models, which often struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{bannoud2026}. We will build a dual-stream predictive model to forecast exact case numbers and warn of severe outbreaks, deploying it as a 4-week-ahead interactive dashboard to empower public health professionals.
+
 
 
 % --- 2. PROBLEM STATEMENT ---
@@ -118,7 +119,7 @@ Dengue forecasting in Sri Lanka has been a significant area of study, with resea
 A review of prior literature highlights a critical gap in turning high-accuracy predictive models into actionable, software-driven tools for the public health sector \parencite{wickramathilaka2024}.
 
 \begin{itemize}
-    \item \textbf{Addressing the Gaps:} This research addresses these limitations by developing a \textbf{Functional Predictive Dashboard}. To move beyond the common "Western Province Bias," our study analyzes \textbf{one critical district per province}, ensuring the tool is relevant and accurate for the entire country \parencite{fernando2024}.
+    \item \textbf{Addressing the Gaps:} This research addresses these limitations by developing a Functional Predictive Dashboard. To move beyond the common "Western Province Bias," our study analyzes one critical district per province, ensuring the tool is relevant and accurate for the entire country \parencite{fernando2024}.
     \item \textbf{Justification:} This study is justified by the urgent need for proactive forecasts that assist in efficient resource allocation during outbreaks \parencite{rahulan2024}. By utilizing a weekly panel dataset since 2017, we diverge from climate-only models by also incorporating human mobility and PHI larval reports, which are crucial but often overlooked factors in dengue transmission \parencite{delaguila2024}.
 \end{itemize}
 
@@ -126,26 +127,31 @@ A review of prior literature highlights a critical gap in turning high-accuracy 
 \section{Methodology}
 
 \subsection{Research Approach}
-This study employs a \textbf{Quantitative Modeling} and \textbf{System Development} approach. We focus on integrating multi-source data through a hybrid machine learning design to enable proactive dengue surveillance across all nine provinces. This localized strategy addresses the "Western Province Bias" while ensuring a manageable nationwide scope \parencite{fernando2024}.
+This study uses a Quantitative Modeling and System Development approach. We focus on integrating multi-source data through a hybrid machine learning design to enable proactive dengue surveillance across all nine provinces. This strategy addresses the "Western Province Bias" by incorporating localized ecological dynamics from across the country \parencite{fernando2024}.
 
 \subsection{Data Strategy and Implementation Plan}
 The research follows a five-phase execution plan to transition from multi-source data collection to a functional software output:
 
 \begin{enumerate}
-    \item \textbf{Data Collection:} (2017--2026) \parencite{wickramathilaka2024}.
-          \begin{itemize}
-              \item \textbf{Epidemiological:} Weekly cases from \textbf{IDH Hospital} and \textbf{Epidemiology Unit} for 2017-2026 \parencite{wickramathilaka2024}.
-              \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the \textbf{Met Dept} \parencite{withanage2018}.
-              \item \textbf{Mobility \& Larval:} Commuter flow from hubs (\textbf{Makumbura, Kadawatha, Fort}) and PHI larval indices \parencite{karasinghe2024}.
-          \end{itemize}
+    \item \textbf{Data Collection:} 
+    \begin{itemize}
+        \item \textbf{Epidemiological:} Weekly cases from Epidemiology Unit (2017--2026) \parencite{wickramathilaka2024}.
+        \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the  Department of Meteorology \parencite{withanage2018}.
+        \item \textbf{Mobility \& Larval:} Commuter flow from transit hubs and PHI reports \parencite{karasinghe2024}.
+    \end{itemize}
 
-    \item \textbf{Preprocessing:} Normalizing and merging diverse data streams into a weekly panel dataset using \textbf{Python (Pandas)}. Key features include 4-week weather lags and transit risk indices.
+    \item \textbf{Preprocessing \& Feature Engineering:} Data will be normalized and merged using Python (Pandas). Feature engineering will focus on:
+    \begin{itemize}
+        \item \textbf{Lag Analysis:} Extracting 4--8 week weather lags to account for mosquito breeding and extrinsic incubation periods.
+        \item \textbf{Zone Indicators:} Incorporating binary indicators for Wet and Dry zones to handle varying regional transmission dynamics.
+        \item \textbf{Transit Risk:} Creating indices from transit hub activities.
+    \end{itemize}
 
-    \item \textbf{Modeling:} Comparing \textbf{LSTM} (temporal patterns), \textbf{LightGBM}, and \textbf{XGBoost} (spatial variances) to identify the most robust architecture \parencite{albannoud2026, uduwanage2025}.
+    \item \textbf{Modeling:} Comparison of LSTM (temporal patterns), LightGBM, and XGBoost (spatial variations) to identify the most robust architecture \parencite{albannoud2026, uduwanage2025}.
 
-    \item \textbf{Evaluation:} Validating 4-week lead-time accuracy using \textbf{MAE and RMSE} metrics to ensure reliable forecasting for health authorities.
+    \item \textbf{Evaluation:} Validating 4-week lead-time accuracy using MAE and RMSE metrics to ensure reliable forecasting across diverse ecological zones.
 
-    \item \textbf{Implementation:} Developing a \textbf{React.js} dashboard featuring spatial risk maps with \textbf{Hotspot Marking} and predictive trend alerts for outbreak prevention.
+    \item \textbf{Implementation:} Developing a React.js dashboard featuring spatial risk maps with Hotspot Marking and predictive trend alerts for outbreak prevention.
 \end{enumerate}
 
 % --- 6. PROJECT SCHEDULE ---
