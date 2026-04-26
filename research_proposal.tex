@@ -5,9 +5,11 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{array}
-\usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{xcolor}
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{references.bib}
+\usepackage{hyperref}
 
 % --- Document Settings ---
 \onehalfspacing
@@ -126,20 +128,20 @@ This research introduces a Dual-Stream Intelligence framework integrating human 
 \section{Preliminary Literature Review}
 
 \subsection{Existing Research and Key Findings}
-Dengue forecasting in Sri Lanka has been a significant area of study, with research consistently linking disease outbreaks to climatic factors such as rainfall, temperature, and humidity \cite{wickramathilaka2024}. These environmental variables directly influence the breeding cycles and population density of the Aedes mosquito \cite{withanage2018}.
+Dengue forecasting in Sri Lanka has been a significant area of study, with research consistently linking disease outbreaks to climatic factors such as rainfall, temperature, and humidity \parencite{wickramathilaka2024}. These environmental variables directly influence the breeding cycles and population density of the Aedes mosquito \parencite{withanage2018}.
 
 \begin{itemize}
-    \item \textbf{Methodologies:} Recent research has shifted toward Deep Learning techniques, particularly Long Short-Term Memory (LSTM) networks. These models are favored for their ability to handle non-linear patterns and long-term dependencies in historical data \cite{albannoud2026, uduwanage2025}.
-    \item \textbf{Strengths:} Current forecasting models effectively demonstrate the correlation between weather fluctuations and immediate spikes in dengue cases, providing a foundation for early warning systems \cite{karasinghe2024}.
-    \item \textbf{Weaknesses:} However, much of the existing research remains theoretical and focused on model accuracy rather than practical use. There is a notable lack of functional software dashboards that health authorities can use in real-time \cite{wickramathilaka2024}. Additionally, many studies focus primarily on the Western Province, which may not accurately reflect the disease dynamics in other ecological zones of the country \cite{fernando2024}.
+    \item \textbf{Methodologies:} Recent research has shifted toward Deep Learning techniques, particularly Long Short-Term Memory (LSTM) networks. These models are favored for their ability to handle non-linear patterns and long-term dependencies in historical data \parencite{albannoud2026, uduwanage2025}.
+    \item \textbf{Strengths:} Current forecasting models effectively demonstrate the correlation between weather fluctuations and immediate spikes in dengue cases, providing a foundation for early warning systems \parencite{karasinghe2024}.
+    \item \textbf{Weaknesses:} However, much of the existing research remains theoretical and focused on model accuracy rather than practical use. There is a notable lack of functional software dashboards that health authorities can use in real-time \parencite{wickramathilaka2024}. Additionally, many studies focus primarily on the Western Province, which may not accurately reflect the disease dynamics in other ecological zones of the country \parencite{fernando2024}.
 \end{itemize}
 
 \subsection{Research Gap and Justification}
-A review of prior literature highlights a critical gap in turning high-accuracy predictive models into actionable, software-driven tools for the public health sector \cite{wickramathilaka2024}.
+A review of prior literature highlights a critical gap in turning high-accuracy predictive models into actionable, software-driven tools for the public health sector \parencite{wickramathilaka2024}.
 
 \begin{itemize}
-    \item \textbf{Addressing the Gaps:} This research addresses these limitations by developing a \textbf{Functional Predictive Dashboard}. To move beyond the common "Western Province Bias," our study analyzes \textbf{one critical district per province}, ensuring the tool is relevant and accurate for the entire country \cite{fernando2024}.
-    \item \textbf{Justification:} This study is justified by the urgent need for proactive forecasts that assist in efficient resource allocation during outbreaks \cite{rahulan2024}. By utilizing a weekly panel dataset since 2017, we diverge from climate-only models by also incorporating human mobility and PHI larval reports, which are crucial but often overlooked factors in dengue transmission \cite{delaguila2024}.
+    \item \textbf{Addressing the Gaps:} This research addresses these limitations by developing a \textbf{Functional Predictive Dashboard}. To move beyond the common "Western Province Bias," our study analyzes \textbf{one critical district per province}, ensuring the tool is relevant and accurate for the entire country \parencite{fernando2024}.
+    \item \textbf{Justification:} This study is justified by the urgent need for proactive forecasts that assist in efficient resource allocation during outbreaks \parencite{rahulan2024}. By utilizing a weekly panel dataset since 2017, we diverge from climate-only models by also incorporating human mobility and PHI larval reports, which are crucial but often overlooked factors in dengue transmission \parencite{delaguila2024}.
 \end{itemize}
 
 % --- 5. METHODOLOGY ---
@@ -221,7 +223,10 @@ The project timeline from initiation to completion is visualized below:
 
 % --- 7. REFERENCES ---
 
-\bibliographystyle{plain}
-\bibliography{references}
+
+\printbibliography
 
 \end{document}
+
+
+

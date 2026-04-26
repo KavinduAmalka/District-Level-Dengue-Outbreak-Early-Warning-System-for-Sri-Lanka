@@ -1,48 +1,19 @@
-This is BibTeX, Version 0.99e
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: research_proposal.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: plain.bst
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-Database file #1: references.bib
-You've used 8 entries,
-            2118 wiz_defined-function locations,
-            547 strings with 5737 characters,
-and the built_in function-call counts, 2961 in all, are:
-= -- 274
-> -- 189
-< -- 0
-+ -- 76
-- -- 66
-* -- 247
-:= -- 528
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 57
-chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 87
-empty$ -- 194
-format.name$ -- 66
-if$ -- 579
-int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 8
-newline$ -- 44
-num.names$ -- 16
-pop$ -- 42
-preamble$ -- 1
-purify$ -- 49
-quote$ -- 0
-skip$ -- 57
-stack$ -- 0
-substring$ -- 167
-swap$ -- 8
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 32
-warning$ -- 0
-while$ -- 25
-width$ -- 9
-write$ -- 91
+[0] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is 'research_proposal.blg'
+[248] biber-MSWIN64:342> INFO - === 
+[320] Biber.pm:421> INFO - Reading 'research_proposal.bcf'
+[605] Biber.pm:1002> INFO - Found 8 citekeys in bib section 0
+[659] Biber.pm:4487> INFO - Processing section 0
+[690] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[781] bibtex.pm:1713> INFO - LaTeX decoding ...
+[815] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1057] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1058] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1058] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1058] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1125] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1126] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1126] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1126] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1150] bbl.pm:676> INFO - Writing 'research_proposal.bbl' with encoding 'UTF-8'
+[1186] bbl.pm:779> INFO - Output to research_proposal.bbl

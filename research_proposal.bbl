@@ -1,56 +1,857 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{albannoud2026}
-M.~Al Bannoud, J.~L. Mendes, R.~S. Sacay, T.~D. Martins, I.~R. A.~P. Bresolin,
-  and J.~B. Louren{\c{c}}o.
-\newblock Machine learning forecasting of dengue in são paulo using virtual
-  data augmentation and urban incident predictors.
-\newblock {\em Acta Tropica}, 275:107992, 2026.
 
-\bibitem{fernando2024}
-L.~Fernando, V.~P. Wickramasinghe, P.~Kalra, R.~Kastner, and E.~Gallagher.
-\newblock Epidemiological burden of dengue in sri lanka: A systematic review of
-  literature from 2000-2020.
-\newblock {\em IJID Regions}, 13:100436, 2024.
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{albannoud2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
+           family={Bannoud},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi Al},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3168cbaeb15047b770062c09f1ae864}{%
+           family={Mendes},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c35a19e9cf54284163428388a954493e}{%
+           family={Sacay},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b39d6b7b0cf34181d8f24f19c6048f1}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={T.\bibnamedelimi D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4cdcbe1b575650ed53ff251ae10f6844}{%
+           family={Bresolin},
+           familyi={B\bibinitperiod},
+           given={I.\bibnamedelimi R.\bibnamedelimi A.\bibnamedelimi P.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2861258431ab944e1c1c30ed608f34d}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a10cc8e4cc61f581c651f44346c3b6f5}
+      \strng{fullhash}{122e9488be41094d198fbbce7b60296e}
+      \strng{fullhashraw}{122e9488be41094d198fbbce7b60296e}
+      \strng{bibnamehash}{122e9488be41094d198fbbce7b60296e}
+      \strng{authorbibnamehash}{122e9488be41094d198fbbce7b60296e}
+      \strng{authornamehash}{a10cc8e4cc61f581c651f44346c3b6f5}
+      \strng{authorfullhash}{122e9488be41094d198fbbce7b60296e}
+      \strng{authorfullhashraw}{122e9488be41094d198fbbce7b60296e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Tropica}
+      \field{title}{Machine Learning forecasting of dengue in São Paulo using virtual data augmentation and urban incident predictors}
+      \field{volume}{275}
+      \field{year}{2026}
+      \field{pages}{107992}
+      \range{pages}{1}
+    \endentry
+    \entry{delaguila2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e450eb3eb70fffa2e8ce78553da4d886}{%
+           family={Del-Águila-Mejía},
+           familyi={D\bibinithyphendelim Á\bibinithyphendelim M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71a0a40e6b90f6561f583c49e2c4f0e4}{%
+           family={Morilla},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31b34a33834611205ef3097f8a90bace}{%
+           family={Donado-Campos},
+           familyi={D\bibinithyphendelim C\bibinitperiod},
+           given={J.\bibnamedelimi D.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{fullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{fullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{bibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorbibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authornamehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{authorfullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorfullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Tropica}
+      \field{title}{A system dynamics modelling and analytical framework for imported dengue outbreak surveillance and risk mapping}
+      \field{volume}{257}
+      \field{year}{2024}
+      \field{pages}{107304}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.actatropica.2024.107304
+      \endverb
+    \endentry
+    \entry{fernando2024}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d182b8560e863e853c381ab7cebbd28b}{%
+           family={Fernando},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de49ca867ece9ce379ecaff4fc1cfc08}{%
+           family={Wickramasinghe},
+           familyi={W\bibinitperiod},
+           given={V.\bibnamedelimi P.},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd57cd8426b652a00d63b78be6d19ea}{%
+           family={Kalra},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31c55ba889f4b402cb71bded29137018}{%
+           family={Kastner},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73423d87c8d674227365caff29309e00}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59cf8aef9fbee64ae7ff33ed82add26c}
+      \strng{fullhash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{fullhashraw}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{bibnamehash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{authorbibnamehash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{authornamehash}{59cf8aef9fbee64ae7ff33ed82add26c}
+      \strng{authorfullhash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{authorfullhashraw}{5bc03186cdf07b55e381a0b6f15ea531}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IJID Regions}
+      \field{title}{Epidemiological burden of dengue in Sri Lanka: A systematic review of literature from 2000-2020}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{pages}{100436}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ijregi.2024.100436
+      \endverb
+    \endentry
+    \entry{karasinghe2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=17ac00e17303953e534f8bd0064050d6}{%
+           family={Karasinghe},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26ed12fa77ca16fd3eb17a07d48c0eea}{%
+           family={Peiris},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a541face213f0502efad8be920d3c45e}{%
+           family={Jayathilaka},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=541f735f531d4bf488462b10424c2333}{%
+           family={Dharmasena},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b846486db65b4fe72676b899b56819c}
+      \strng{fullhash}{245a53837ae80722774843798bcaeb03}
+      \strng{fullhashraw}{245a53837ae80722774843798bcaeb03}
+      \strng{bibnamehash}{245a53837ae80722774843798bcaeb03}
+      \strng{authorbibnamehash}{245a53837ae80722774843798bcaeb03}
+      \strng{authornamehash}{8b846486db65b4fe72676b899b56819c}
+      \strng{authorfullhash}{245a53837ae80722774843798bcaeb03}
+      \strng{authorfullhashraw}{245a53837ae80722774843798bcaeb03}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS ONE}
+      \field{number}{3}
+      \field{title}{Forecasting weekly dengue incidence in Sri Lanka: Modified Autoregressive Integrated Moving Average modeling approach}
+      \field{volume}{19}
+      \field{year}{2024}
+      \field{pages}{e0299953}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0299953
+      \endverb
+    \endentry
+    \entry{rahulan2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e7d47d2f50b5a216ab5bef0b3da1d72}{%
+           family={Rahulan},
+           familyi={R\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4134080e321dd833e3d0ab78d319c05c}{%
+           family={Ranagala},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef7af15f4ba40fce3cebe803e4db6df6}{%
+           family={Roshan},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi Paul},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{fullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{fullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{bibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorbibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authornamehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{authorfullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorfullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Sri Lanka Journal of Medical Administration}
+      \field{number}{1}
+      \field{title}{Dengue Outbreak Control and Prevention: A Case Study of Gampaha District, Sri Lanka}
+      \field{volume}{25}
+      \field{year}{2024}
+      \field{pages}{12\bibrangedash 21}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.4038/sljma.v25i1.5477
+      \endverb
+    \endentry
+    \entry{uduwanage2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8fa93bb9894f1f03b8fa4431ec9598ba}{%
+           family={Uduwanage},
+           familyi={U\bibinitperiod},
+           given={H.\bibnamedelimi U.},
+           giveni={H\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b1254dc12cebd474dae36cb4592747c}{%
+           family={Konara},
+           familyi={K\bibinitperiod},
+           given={K.\bibnamedelimi M.\bibnamedelimi S.\bibnamedelimi L.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=288de35fc101c8e31ac79dc35c5213d5}{%
+           family={Mihiranga},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi D.\bibnamedelimi R.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f70b4f7623dd7df16d2d3e234bff3054}{%
+           family={Karunarathna},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f6f23fe26ec9491329ea3e7dfdea5ce}{%
+           family={Noordeen},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44b19b01a38606eb142bc7f28223e061}{%
+           family={Ekanayake},
+           familyi={E\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0778f3146be7141e473a9f3b6d54b702}
+      \strng{fullhash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{fullhashraw}{863867703362ca5f7bde01f2151b91c9}
+      \strng{bibnamehash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{authorbibnamehash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{authornamehash}{0778f3146be7141e473a9f3b6d54b702}
+      \strng{authorfullhash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{authorfullhashraw}{863867703362ca5f7bde01f2151b91c9}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sri Lanka Journal of Medicine}
+      \field{number}{1}
+      \field{title}{Prediction of dengue outbreaks in Sri Lanka using machine learning techniques}
+      \field{volume}{34}
+      \field{year}{2025}
+      \field{pages}{15\bibrangedash 26}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.4038/sljm.v34i1.568
+      \endverb
+    \endentry
+    \entry{wickramathilaka2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cfa9a803f2ac144ae963b708221ee165}{%
+           family={Wickramathilaka},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ab8640677361d9402a6c2b1f3030c0a}{%
+           family={Munasinghe},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{fullhash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{fullhashraw}{8cbb38ac120f850015a2800bdc912261}
+      \strng{bibnamehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authorbibnamehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authornamehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authorfullhash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authorfullhashraw}{8cbb38ac120f850015a2800bdc912261}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Moratuwa White Paper}
+      \field{note}{White paper}
+      \field{title}{Epidemiological pattern recognition and disease forecasting for dengue in Sri Lanka}
+      \field{year}{2024}
+    \endentry
+    \entry{withanage2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=57d83a7e68998de9363011d5c8b90e84}{%
+           family={Withanage},
+           familyi={W\bibinitperiod},
+           given={G.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73bd211295f93e0a09f346f5feed5f10}{%
+           family={Viswakula},
+           familyi={V\bibinitperiod},
+           given={S.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35d33bbb725691d3a7f23fc1fe83e4ca}{%
+           family={Gunawardena},
+           familyi={G\bibinitperiod},
+           given={Y.\bibnamedelimi I.\bibnamedelimi N.\bibnamedelimi Silva},
+           giveni={Y\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=109732df61c577b18becdcb5d3f04dd9}{%
+           family={Hapugoda},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5979dcc2bbd7b54d544781223e85bd39}
+      \strng{fullhash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{fullhashraw}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{bibnamehash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{authorbibnamehash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{authornamehash}{5979dcc2bbd7b54d544781223e85bd39}
+      \strng{authorfullhash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{authorfullhashraw}{1ebe67ad977ce12bebf040e70a50179e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Parasites \& Vectors}
+      \field{number}{1}
+      \field{title}{A forecasting model for dengue incidence in the District of Gampaha, Sri Lanka}
+      \field{volume}{11}
+      \field{year}{2018}
+      \field{pages}{262}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{albannoud2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
+           family={Bannoud},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi Al},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3168cbaeb15047b770062c09f1ae864}{%
+           family={Mendes},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c35a19e9cf54284163428388a954493e}{%
+           family={Sacay},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b39d6b7b0cf34181d8f24f19c6048f1}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={T.\bibnamedelimi D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4cdcbe1b575650ed53ff251ae10f6844}{%
+           family={Bresolin},
+           familyi={B\bibinitperiod},
+           given={I.\bibnamedelimi R.\bibnamedelimi A.\bibnamedelimi P.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2861258431ab944e1c1c30ed608f34d}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a10cc8e4cc61f581c651f44346c3b6f5}
+      \strng{fullhash}{122e9488be41094d198fbbce7b60296e}
+      \strng{fullhashraw}{122e9488be41094d198fbbce7b60296e}
+      \strng{bibnamehash}{122e9488be41094d198fbbce7b60296e}
+      \strng{authorbibnamehash}{122e9488be41094d198fbbce7b60296e}
+      \strng{authornamehash}{a10cc8e4cc61f581c651f44346c3b6f5}
+      \strng{authorfullhash}{122e9488be41094d198fbbce7b60296e}
+      \strng{authorfullhashraw}{122e9488be41094d198fbbce7b60296e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Tropica}
+      \field{title}{Machine Learning forecasting of dengue in São Paulo using virtual data augmentation and urban incident predictors}
+      \field{volume}{275}
+      \field{year}{2026}
+      \field{pages}{107992}
+      \range{pages}{1}
+    \endentry
+    \entry{delaguila2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e450eb3eb70fffa2e8ce78553da4d886}{%
+           family={Del-Águila-Mejía},
+           familyi={D\bibinithyphendelim Á\bibinithyphendelim M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71a0a40e6b90f6561f583c49e2c4f0e4}{%
+           family={Morilla},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31b34a33834611205ef3097f8a90bace}{%
+           family={Donado-Campos},
+           familyi={D\bibinithyphendelim C\bibinitperiod},
+           given={J.\bibnamedelimi D.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{fullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{fullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{bibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorbibnamehash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authornamehash}{1e12960384438c74a805d6b5993c5f54}
+      \strng{authorfullhash}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \strng{authorfullhashraw}{bbb7b3ce310dc7d5b36fb82a9a2977c8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Tropica}
+      \field{title}{A system dynamics modelling and analytical framework for imported dengue outbreak surveillance and risk mapping}
+      \field{volume}{257}
+      \field{year}{2024}
+      \field{pages}{107304}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.actatropica.2024.107304
+      \endverb
+    \endentry
+    \entry{fernando2024}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d182b8560e863e853c381ab7cebbd28b}{%
+           family={Fernando},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de49ca867ece9ce379ecaff4fc1cfc08}{%
+           family={Wickramasinghe},
+           familyi={W\bibinitperiod},
+           given={V.\bibnamedelimi P.},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd57cd8426b652a00d63b78be6d19ea}{%
+           family={Kalra},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=31c55ba889f4b402cb71bded29137018}{%
+           family={Kastner},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73423d87c8d674227365caff29309e00}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59cf8aef9fbee64ae7ff33ed82add26c}
+      \strng{fullhash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{fullhashraw}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{bibnamehash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{authorbibnamehash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{authornamehash}{59cf8aef9fbee64ae7ff33ed82add26c}
+      \strng{authorfullhash}{5bc03186cdf07b55e381a0b6f15ea531}
+      \strng{authorfullhashraw}{5bc03186cdf07b55e381a0b6f15ea531}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IJID Regions}
+      \field{title}{Epidemiological burden of dengue in Sri Lanka: A systematic review of literature from 2000-2020}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{pages}{100436}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ijregi.2024.100436
+      \endverb
+    \endentry
+    \entry{karasinghe2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=17ac00e17303953e534f8bd0064050d6}{%
+           family={Karasinghe},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26ed12fa77ca16fd3eb17a07d48c0eea}{%
+           family={Peiris},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a541face213f0502efad8be920d3c45e}{%
+           family={Jayathilaka},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=541f735f531d4bf488462b10424c2333}{%
+           family={Dharmasena},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8b846486db65b4fe72676b899b56819c}
+      \strng{fullhash}{245a53837ae80722774843798bcaeb03}
+      \strng{fullhashraw}{245a53837ae80722774843798bcaeb03}
+      \strng{bibnamehash}{245a53837ae80722774843798bcaeb03}
+      \strng{authorbibnamehash}{245a53837ae80722774843798bcaeb03}
+      \strng{authornamehash}{8b846486db65b4fe72676b899b56819c}
+      \strng{authorfullhash}{245a53837ae80722774843798bcaeb03}
+      \strng{authorfullhashraw}{245a53837ae80722774843798bcaeb03}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLOS ONE}
+      \field{number}{3}
+      \field{title}{Forecasting weekly dengue incidence in Sri Lanka: Modified Autoregressive Integrated Moving Average modeling approach}
+      \field{volume}{19}
+      \field{year}{2024}
+      \field{pages}{e0299953}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0299953
+      \endverb
+    \endentry
+    \entry{rahulan2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2e7d47d2f50b5a216ab5bef0b3da1d72}{%
+           family={Rahulan},
+           familyi={R\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4134080e321dd833e3d0ab78d319c05c}{%
+           family={Ranagala},
+           familyi={R\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef7af15f4ba40fce3cebe803e4db6df6}{%
+           family={Roshan},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi Paul},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{fullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{fullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{bibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorbibnamehash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authornamehash}{cb008d70eca952fb286da26acd16eadb}
+      \strng{authorfullhash}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \strng{authorfullhashraw}{b6f5f7fe418aab7d0742a07cdaf00946}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Sri Lanka Journal of Medical Administration}
+      \field{number}{1}
+      \field{title}{Dengue Outbreak Control and Prevention: A Case Study of Gampaha District, Sri Lanka}
+      \field{volume}{25}
+      \field{year}{2024}
+      \field{pages}{12\bibrangedash 21}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.4038/sljma.v25i1.5477
+      \endverb
+    \endentry
+    \entry{uduwanage2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8fa93bb9894f1f03b8fa4431ec9598ba}{%
+           family={Uduwanage},
+           familyi={U\bibinitperiod},
+           given={H.\bibnamedelimi U.},
+           giveni={H\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b1254dc12cebd474dae36cb4592747c}{%
+           family={Konara},
+           familyi={K\bibinitperiod},
+           given={K.\bibnamedelimi M.\bibnamedelimi S.\bibnamedelimi L.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=288de35fc101c8e31ac79dc35c5213d5}{%
+           family={Mihiranga},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi D.\bibnamedelimi R.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f70b4f7623dd7df16d2d3e234bff3054}{%
+           family={Karunarathna},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f6f23fe26ec9491329ea3e7dfdea5ce}{%
+           family={Noordeen},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44b19b01a38606eb142bc7f28223e061}{%
+           family={Ekanayake},
+           familyi={E\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0778f3146be7141e473a9f3b6d54b702}
+      \strng{fullhash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{fullhashraw}{863867703362ca5f7bde01f2151b91c9}
+      \strng{bibnamehash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{authorbibnamehash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{authornamehash}{0778f3146be7141e473a9f3b6d54b702}
+      \strng{authorfullhash}{863867703362ca5f7bde01f2151b91c9}
+      \strng{authorfullhashraw}{863867703362ca5f7bde01f2151b91c9}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sri Lanka Journal of Medicine}
+      \field{number}{1}
+      \field{title}{Prediction of dengue outbreaks in Sri Lanka using machine learning techniques}
+      \field{volume}{34}
+      \field{year}{2025}
+      \field{pages}{15\bibrangedash 26}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.4038/sljm.v34i1.568
+      \endverb
+    \endentry
+    \entry{wickramathilaka2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cfa9a803f2ac144ae963b708221ee165}{%
+           family={Wickramathilaka},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ab8640677361d9402a6c2b1f3030c0a}{%
+           family={Munasinghe},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{fullhash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{fullhashraw}{8cbb38ac120f850015a2800bdc912261}
+      \strng{bibnamehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authorbibnamehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authornamehash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authorfullhash}{8cbb38ac120f850015a2800bdc912261}
+      \strng{authorfullhashraw}{8cbb38ac120f850015a2800bdc912261}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Moratuwa White Paper}
+      \field{note}{White paper}
+      \field{title}{Epidemiological pattern recognition and disease forecasting for dengue in Sri Lanka}
+      \field{year}{2024}
+    \endentry
+    \entry{withanage2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=57d83a7e68998de9363011d5c8b90e84}{%
+           family={Withanage},
+           familyi={W\bibinitperiod},
+           given={G.\bibnamedelimi P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73bd211295f93e0a09f346f5feed5f10}{%
+           family={Viswakula},
+           familyi={V\bibinitperiod},
+           given={S.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35d33bbb725691d3a7f23fc1fe83e4ca}{%
+           family={Gunawardena},
+           familyi={G\bibinitperiod},
+           given={Y.\bibnamedelimi I.\bibnamedelimi N.\bibnamedelimi Silva},
+           giveni={Y\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=109732df61c577b18becdcb5d3f04dd9}{%
+           family={Hapugoda},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5979dcc2bbd7b54d544781223e85bd39}
+      \strng{fullhash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{fullhashraw}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{bibnamehash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{authorbibnamehash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{authornamehash}{5979dcc2bbd7b54d544781223e85bd39}
+      \strng{authorfullhash}{1ebe67ad977ce12bebf040e70a50179e}
+      \strng{authorfullhashraw}{1ebe67ad977ce12bebf040e70a50179e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Parasites \& Vectors}
+      \field{number}{1}
+      \field{title}{A forecasting model for dengue incidence in the District of Gampaha, Sri Lanka}
+      \field{volume}{11}
+      \field{year}{2018}
+      \field{pages}{262}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem{karasinghe2024}
-N.~Karasinghe, S.~Peiris, R.~Jayathilaka, and T.~Dharmasena.
-\newblock Forecasting weekly dengue incidence in sri lanka: Modified
-  autoregressive integrated moving average modeling approach.
-\newblock {\em PLOS ONE}, 19(3):e0299953, 2024.
-
-\bibitem{rahulan2024}
-K.~Rahulan, R.~M. Ranagala, and G.~Paul Roshan.
-\newblock Dengue outbreak control and prevention: A case study of gampaha
-  district, sri lanka.
-\newblock {\em The Sri Lanka Journal of Medical Administration}, 25(1):12--21,
-  2024.
-
-\bibitem{uduwanage2025}
-H.~U. Uduwanage, K.~M. S.~L. Konara, G.~D.~R. Mihiranga, S.~N. Karunarathna,
-  F.~Noordeen, and I.~Ekanayake.
-\newblock Prediction of dengue outbreaks in sri lanka using machine learning
-  techniques.
-\newblock {\em Sri Lanka Journal of Medicine}, 34(1):15--26, 2025.
-
-\bibitem{wickramathilaka2024}
-S.~Wickramathilaka and A.~Munasinghe.
-\newblock Epidemiological pattern recognition and disease forecasting for
-  dengue in sri lanka.
-\newblock {\em University of Moratuwa White Paper}, 2024.
-\newblock White paper.
-
-\bibitem{withanage2018}
-G.~P. Withanage, S.~D. Viswakula, Y.~I. N.~Silva Gunawardena, and M.~D.
-  Hapugoda.
-\newblock A forecasting model for dengue incidence in the district of gampaha,
-  sri lanka.
-\newblock {\em Parasites \& Vectors}, 11(1):262, 2018.
-
-\bibitem{delaguila2024}
-J.~Del Águila Mejía, F.~Morilla, and J.~D.~M. Donado-Campos.
-\newblock A system dynamics modelling and analytical framework for imported
-  dengue outbreak surveillance and risk mapping.
-\newblock {\em Acta Tropica}, 257:107304, 2024.
-
-\end{thebibliography}
