@@ -66,12 +66,11 @@
       \strng{authornamehash}{a10cc8e4cc61f581c651f44346c3b6f5}
       \strng{authorfullhash}{122e9488be41094d198fbbce7b60296e}
       \strng{authorfullhashraw}{122e9488be41094d198fbbce7b60296e}
-      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Tropica}
@@ -80,46 +79,6 @@
       \field{year}{2026}
       \field{pages}{107992}
       \range{pages}{1}
-    \endentry
-    \entry{chen2026}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=60aeb23a507616b6ae2488ddaab41f0e}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fb384e4613333a2c69b5f4d129bebfc4}{%
-           family={Moraga},
-           familyi={M\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{fullhash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{fullhashraw}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{bibnamehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authorbibnamehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authornamehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authorfullhash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authorfullhashraw}{af891b51556abfb99630ccad3ee36f6b}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Infectious Disease Modelling}
-      \field{title}{Dengue forecasting and outbreak detection in Brazil using LSTM: integrating human mobility and climate factors}
-      \field{volume}{11}
-      \field{year}{2026}
-      \field{pages}{338\bibrangedash 354}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1016/j.idm.2025.11.002
-      \endverb
     \endentry
     \entry{delaguila2024}{article}{}{}
       \name{author}{3}{}{%
@@ -475,73 +434,66 @@
       \field{pages}{262}
       \range{pages}{1}
     \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global/global}
-    \entry{bannoud2026}{article}{}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=941e63454be1482c660701947af9a87d}{%
-           family={Bannoud},
-           familyi={B\bibinitperiod},
-           given={M.\bibnamedelimi A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+    \entry{zhang2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=5ee5d3d5470ac29a2e7c8df70ed54725}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3168cbaeb15047b770062c09f1ae864}{%
-           family={Mendes},
-           familyi={M\bibinitperiod},
-           given={J.\bibnamedelimi L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+        {{un=0,uniquepart=base,hash=7e90e50a378e5407eee25308f1d9a3c0}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c35a19e9cf54284163428388a954493e}{%
-           family={Sacay},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi S.},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+        {{un=0,uniquepart=base,hash=30c3519915a07c272d6fd946f3eaa35a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0b39d6b7b0cf34181d8f24f19c6048f1}{%
-           family={Martins},
-           familyi={M\bibinitperiod},
-           given={T.\bibnamedelimi D.},
-           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+        {{un=0,uniquepart=base,hash=188f0af61122d83fa9cf12ee529ab483}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=4cdcbe1b575650ed53ff251ae10f6844}{%
-           family={Bresolin},
-           familyi={B\bibinitperiod},
-           given={I.\bibnamedelimi R.\bibnamedelimi A.\bibnamedelimi P.},
-           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b2861258431ab944e1c1c30ed608f34d}{%
-           family={Lourenço},
-           familyi={L\bibinitperiod},
-           given={J.\bibnamedelimi B.},
-           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{fee04811dc6c67df9b04540df23f40e4}
-      \strng{fullhash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{fullhashraw}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{bibnamehash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{authorbibnamehash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{authornamehash}{fee04811dc6c67df9b04540df23f40e4}
-      \strng{authorfullhash}{b9035b59a07805f4a394bef36967d5f9}
-      \strng{authorfullhashraw}{b9035b59a07805f4a394bef36967d5f9}
-      \field{extraname}{1}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradate}{1}
+      \strng{namehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{fullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{fullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{bibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorbibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authornamehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{authorfullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorfullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Acta Tropica}
-      \field{title}{Machine Learning forecasting of dengue in São Paulo using virtual data augmentation and urban incident predictors: Addressing the exceptional surge of cases in 2024}
-      \field{volume}{275}
+      \field{journaltitle}{Urban Climate}
+      \field{title}{Decoding multi-frequency scale climate-dengue dynamics: An interpretable modeling framework}
+      \field{volume}{65}
       \field{year}{2026}
-      \field{pages}{107992}
+      \field{pages}{102734}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.actatropica.2026.107992
+      \verb 10.1016/j.uclim.2024.102734
       \endverb
     \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
     \entry{albannoud2026}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
@@ -589,12 +541,11 @@
       \strng{authornamehash}{a10cc8e4cc61f581c651f44346c3b6f5}
       \strng{authorfullhash}{122e9488be41094d198fbbce7b60296e}
       \strng{authorfullhashraw}{122e9488be41094d198fbbce7b60296e}
-      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Tropica}
@@ -603,46 +554,6 @@
       \field{year}{2026}
       \field{pages}{107992}
       \range{pages}{1}
-    \endentry
-    \entry{chen2026}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=60aeb23a507616b6ae2488ddaab41f0e}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fb384e4613333a2c69b5f4d129bebfc4}{%
-           family={Moraga},
-           familyi={M\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{fullhash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{fullhashraw}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{bibnamehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authorbibnamehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authornamehash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authorfullhash}{af891b51556abfb99630ccad3ee36f6b}
-      \strng{authorfullhashraw}{af891b51556abfb99630ccad3ee36f6b}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Infectious Disease Modelling}
-      \field{title}{Dengue forecasting and outbreak detection in Brazil using LSTM: integrating human mobility and climate factors}
-      \field{volume}{11}
-      \field{year}{2026}
-      \field{pages}{338\bibrangedash 354}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1016/j.idm.2025.11.002
-      \endverb
     \endentry
     \entry{delaguila2024}{article}{}{}
       \name{author}{3}{}{%
@@ -998,9 +909,65 @@
       \field{pages}{262}
       \range{pages}{1}
     \endentry
+    \entry{zhang2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=5ee5d3d5470ac29a2e7c8df70ed54725}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e90e50a378e5407eee25308f1d9a3c0}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30c3519915a07c272d6fd946f3eaa35a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=188f0af61122d83fa9cf12ee529ab483}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{fullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{fullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{bibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorbibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authornamehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{authorfullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorfullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Urban Climate}
+      \field{title}{Decoding multi-frequency scale climate-dengue dynamics: An interpretable modeling framework}
+      \field{volume}{65}
+      \field{year}{2026}
+      \field{pages}{102734}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.uclim.2024.102734
+      \endverb
+    \endentry
   \enddatalist
-  \missing{bannoud2026}
-  \missing{chen2026}
 \endrefsection
 \endinput
 

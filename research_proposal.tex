@@ -55,9 +55,9 @@
 
 Dengue fever is a serious mosquito-borne disease that has become a huge public health issue in Sri Lanka. The spread of the virus is closely tied to our country's weather, especially the Southwest and Northeast monsoons. Over the years, we have seen massive outbreaks that easily overwhelm our local hospitals. Currently, the way we track dengue is mostly reactive - health officials rely heavily on clinical reports of people who are already sick, rather than predicting where the mosquitoes will strike next \parencite{karasinghe2024}.
 
-Moving from a reactive approach to a proactive one is really important for saving resources and lives. By using modern technology like Machine Learning (ML), we can predict these outbreaks before they happen. Recent research in Sri Lanka has shown that analyzing weather parameters like temperature, wind speed, and precipitation with ML techniques can successfully forecast outbreaks across multiple districts \parencite{uduwanage2025}. Furthermore, global studies prove that adding human mobility data into these models makes early warning systems highly accurate in detecting where the disease will travel next \parencite{chen2026}.
+Moving from a reactive approach to a proactive one is really important for saving resources and lives. By using modern technology like Machine Learning (ML), we can predict these outbreaks before they happen. Recent research in Sri Lanka has shown that analyzing weather parameters like temperature, wind speed, and precipitation with ML techniques can successfully forecast outbreaks across multiple districts \parencite{uduwanage2025}. Furthermore, global studies prove that adding human mobility data into these models makes early warning systems highly accurate in detecting where the disease will travel next \parencite{zhang2026}.
 
-This research is primarily motivated by the severe impact dengue has on so many people in our communities, and our group wants to use our software engineering skills to make a real difference. While some forecasting models exist, many struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{bannoud2026}. Our project aims to fill this gap by building a dual-stream predictive model—which predicts both the exact number of expected cases and warns if a severe outbreak threshold is crossed. By deploying this as an interactive 4-week-ahead dashboard, we can give public health workers a practical tool to see where dengue will hit next and stop it in time.
+This research is primarily motivated by the severe impact dengue has on so many people in our communities, and our group wants to use our software engineering skills to make a real difference. While some forecasting models exist, many struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{albannoud2026}. Our project aims to fill this gap by building a dual-stream predictive model—which predicts both the exact number of expected cases and warns if a severe outbreak threshold is crossed. By deploying this as an interactive 4-week-ahead dashboard, we can give public health workers a practical tool to see where dengue will hit next and stop it in time.
 
 
 % --- 2. PROBLEM STATEMENT ---
@@ -129,9 +129,9 @@ This study employs a \textbf{Quantitative Modeling} and \textbf{System Developme
 The research follows a five-phase execution plan to transition from multi-source data collection to a functional software output:
 
 \begin{enumerate}
-    \item \textbf{Data Collection:} 
+    \item \textbf{Data Collection:} (2017--2026) \parencite{wickramathilaka2024}.
     \begin{itemize}
-        \item \textbf{Epidemiological:} Weekly cases from \textbf{IDH Hospital} (2017--2026) \parencite{wickramathilaka2024}.
+        \item \textbf{Epidemiological:} Weekly cases from \textbf{IDH Hospital} and \textbf{Epidemiology Unit} for 2017-2026 \parencite{wickramathilaka2024}.
         \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the \textbf{Met Dept} \parencite{withanage2018}.
         \item \textbf{Mobility \& Larval:} Commuter flow from hubs (\textbf{Makumbura, Kadawatha, Fort}) and PHI larval indices \parencite{karasinghe2024}.
     \end{itemize}
