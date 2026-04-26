@@ -25,24 +25,24 @@
     \vspace*{1cm}
     {\Large \textbf{Research Project Proposal}}\\[1.5cm]
 
-    
+
     {\huge \textbf{District-Level Dengue Outbreak Early Warning System for Sri Lanka}}\\[3cm]
-    
+
     \textbf{Group Number: Group 10}\\[5cm]
-    
+
     {\textbf{Group Members:}}\\[0.3cm]
     \begin{table}[h]
         \centering
         \begin{tabular}{|l|l|l|}
-        \hline
-        \textbf{Name} & \textbf{Student ID} \\ \hline
-        Kavindu Amalka & SE/2021/008 \\ \hline
-        Hiruni Imasha & SE/2021/053 \\ \hline
-        Sandaru Mihiran & SE/2021/010 \\ \hline
-        Sachini Weerakkody & SE/2021/018 \\ \hline
+            \hline
+            \textbf{Name}      & \textbf{Student ID} \\ \hline
+            Kavindu Amalka     & SE/2021/008         \\ \hline
+            Hiruni Imasha      & SE/2021/053         \\ \hline
+            Sandaru Mihiran    & SE/2021/010         \\ \hline
+            Sachini Weerakkody & SE/2021/018         \\ \hline
         \end{tabular}
     \end{table}
-    
+
     \vfill
     Date: \today
 \end{titlepage}
@@ -53,11 +53,12 @@
 
 \section{Introduction}
 
-Dengue fever is a serious mosquito-borne disease that has become a huge public health issue in Sri Lanka. The spread of the virus is closely tied to our country's weather, especially the Southwest and Northeast monsoons. Over the years, we have seen massive outbreaks that easily overwhelm our local hospitals. Currently, the way we track dengue is mostly reactive - health officials rely heavily on clinical reports of people who are already sick, rather than predicting where the mosquitoes will strike next \parencite{karasinghe2024}.
+Dengue fever is a severe, mosquito-borne viral disease that has evolved into a hyper-endemic public health crisis in Sri Lanka. The virus is primarily transmitted by Aedes aegypti and Aedes albopictus mosquitoes, and its spread is closely tied to our country's weather, especially the Southwest and Northeast monsoons. Currently, local dengue tracking is highly reactive, relying on delayed clinical reports of sick patients rather than predicting where mosquitoes will strike next \parencite{karasinghe2024}.
 
-Moving from a reactive approach to a proactive one is really important for saving resources and lives. By using modern technology like Machine Learning (ML), we can predict these outbreaks before they happen. Recent research in Sri Lanka has shown that analyzing weather parameters like temperature, wind speed, and precipitation with ML techniques can successfully forecast outbreaks across multiple districts \parencite{uduwanage2025}. Furthermore, global studies prove that adding human mobility data into these models makes early warning systems highly accurate in detecting where the disease will travel next \parencite{zhang2026}.
+Transitioning to a proactive approach is vital for saving resources and lives. Machine Learning (ML) can successfully forecast these outbreaks using weather parameters like temperature and precipitation \parencite{uduwanage2025}. Furthermore, adding human mobility data to these models makes early warning systems highly accurate in detecting disease spread \parencite{chen2026}.
 
-This research is primarily motivated by the severe impact dengue has on so many people in our communities, and our group wants to use our software engineering skills to make a real difference. While some forecasting models exist, many struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{albannoud2026}. Our project aims to fill this gap by building a dual-stream predictive model—which predicts both the exact number of expected cases and warns if a severe outbreak threshold is crossed. By deploying this as an interactive 4-week-ahead dashboard, we can give public health workers a practical tool to see where dengue will hit next and stop it in time.
+Motivated by the severe impact of dengue on our communities, our group aims to use software engineering to fill the gaps in current forecasting models, which often struggle to handle extreme, unprecedented outbreaks or fail to provide practical alerts \parencite{bannoud2026}. We will build a dual-stream predictive model to forecast exact case numbers and warn of severe outbreaks, deploying it as a 4-week-ahead interactive dashboard to empower public health professionals.
+
 
 
 % --- 2. PROBLEM STATEMENT ---
@@ -80,23 +81,26 @@ This research introduces a Dual-Stream Intelligence framework integrating human 
 % --- 3. OBJECTIVES ---
 \section{Objectives}
 
-\textit{Outline the specific goals your research aims to achieve.}
 
 \subsection{Primary Objective}
-[State your main research goal clearly and measurably]
+The primary goal of this research is to develop a proactive, data-driven dengue early warning and risk-mapping system for Sri Lanka.
+By leveraging automated surveillance, the project aims to empower health authorities to identify potential outbreaks in advance. This ensures timely interventions and optimized resource allocation to significantly mitigate public health risks across the country.
 
 \subsection{Secondary Objectives}
 \begin{enumerate}
-    \item Objective 1: Specific, measurable goal
-    \item Objective 2: Specific, measurable goal
-    \item Objective 3: Specific, measurable goal
-    \item Objective 4: Specific, measurable goal
+    \item \textbf{Data Fusion:} Integrate historical cases, climate, mobility, and PHI larval data into a single unified framework.
+    \item \textbf{Mobility Modeling:} Incorporate bus/train network patterns to predict inter-district disease spread.
+    \item \textbf{Dual-Function ML:} Develop hybrid models for both case forecasting (Regression) and risk-level categorization (Classification).
+    \item \textbf{Regional Nuance:} Capture Wet/Dry zone variations and establish district-specific climate-to-outbreak time lags.
+    \item \textbf{Decision Support:} Build a digital dashboard to translate technical forecasts into prioritized field tasks for PHIs.
+
 \end{enumerate}
 
-\noindent\textbf{Guidelines:}
+\noindent\textbf{Expected Impact:}
 \begin{itemize}
-    \item Explain the benefits or impacts of your research (e.g., improved understanding, enhanced performance, practical solutions)
-    \item Ensure objectives are clear, measurable, and directly address the problem statement
+    \item \textbf{Early Intervention:} Enables a ``4-week lead time'' to stop outbreaks before they escalate.
+    \item \textbf{Optimized Resources:} Directs cleanup and inspection teams to high-risk clusters with precision.
+    \item \textbf{Policy Support:} Provides an evidence-based, scalable framework for national data-driven healthcare.
 \end{itemize}
 
 % --- 4. PRELIMINARY LITERATURE REVIEW ---
@@ -106,7 +110,7 @@ This research introduces a Dual-Stream Intelligence framework integrating human 
 Dengue forecasting in Sri Lanka has been a significant area of study, with research consistently linking disease outbreaks to climatic factors such as rainfall, temperature, and humidity \parencite{wickramathilaka2024}. These environmental variables directly influence the breeding cycles and population density of the Aedes mosquito \parencite{withanage2018}.
 
 \begin{itemize}
-    \item \textbf{Methodologies:} Recent research has shifted toward Deep Learning techniques, particularly Long Short-Term Memory (LSTM) networks. These models are favored for their ability to handle non-linear patterns and long-term dependencies in historical data \parencite{albannoud2026, uduwanage2025}.
+    \item \textbf{Methodologies:} Recent research has shifted toward Deep Learning techniques, particularly Long Short-Term Memory (LSTM) networks. These models are favored for their ability to handle non-linear patterns and long-term dependencies in historical data \parencite{bannoud2026, uduwanage2025}.
     \item \textbf{Strengths:} Current forecasting models effectively demonstrate the correlation between weather fluctuations and immediate spikes in dengue cases, providing a foundation for health sectors \parencite{karasinghe2024}.
     \item \textbf{Weaknesses:} However, much of the existing research remains theoretical and focused on model accuracy rather than practical use. There is a notable lack of functional software dashboards that health authorities can use in real-time \parencite{wickramathilaka2024}. Additionally, many studies focus primarily on the Western Province, which may not accurately reflect the disease dynamics in other ecological zones of the country \parencite{fernando2024}.
 \end{itemize}
@@ -159,19 +163,19 @@ The research follows a five-phase execution plan to transition from multi-source
 The project timeline from initiation to completion is visualized below:
 
 \begin{table}[h]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|c|c|c|c|c|c|}
-\hline
-\textbf{Milestone/Phase} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{Member(s) In-charge} \\ \hline
-[Phase 1: Literature Review] & X &  &  &  &  & [Member Names] \\ \hline
-[Phase 2: Data Collection/Prep] &  & X &  &  &  & [Member Names] \\ \hline
-[Phase 3: Model Development] &  &  & X &  &  & [Member Names] \\ \hline
-[Phase 4: Testing \& Validation] &  &  &  & X &  & [Member Names] \\ \hline
-[Phase 5: Final Documentation] &  &  &  &  & X & [Member Names] \\ \hline
-\end{tabular}%
-}
-\caption{Project Timeline and Milestones}
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|c|c|c|c|c|c|}
+            \hline
+            \textbf{Milestone/Phase} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{Member(s) In-charge} \\ \hline
+                                                                                                                                             [Phase 1: Literature Review] & X &  &  &  &  & [Member Names] \\ \hline
+                                                                                                                                                                                                              [Phase 2: Data Collection/Prep] &  & X &  &  &  & [Member Names] \\ \hline
+                                                                                                                                                                                                                                                                                  [Phase 3: Model Development] &  &  & X &  &  & [Member Names] \\ \hline
+                                                                                                                                                                                                                                                                                                                                                   [Phase 4: Testing \& Validation] &  &  &  & X &  & [Member Names] \\ \hline
+                                                                                                                                                                                                                                                                                                                                                                                                                        [Phase 5: Final Documentation] &  &  &  &  & X & [Member Names] \\ \hline
+        \end{tabular}%
+    }
+    \caption{Project Timeline and Milestones}
 \end{table}
 
 \subsection{Milestone Definitions}
