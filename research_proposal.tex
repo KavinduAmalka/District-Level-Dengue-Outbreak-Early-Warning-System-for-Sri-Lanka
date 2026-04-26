@@ -12,6 +12,7 @@
 \usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{references.bib}
 \usepackage{hyperref}
+\usepackage{makecell}
 
 % --- Document Settings ---
 \onehalfspacing
@@ -33,7 +34,7 @@
     {\textbf{Group Members:}}\\[0.3cm]
     \begin{table}[h]
         \centering
-        \begin{tabular}{|l|l|l|}
+        \begin{tabular}{|l|l|}
             \hline
             \textbf{Name}      & \textbf{Student ID} \\ \hline
             Kavindu Amalka     & SE/2021/008         \\ \hline
@@ -157,42 +158,42 @@ The research follows a five-phase execution plan to transition from multi-source
 % --- 6. PROJECT SCHEDULE ---
 \section{Project Schedule}
 
-\textit{Develop a detailed project timeline with key milestones and assign team members.}
 
 \subsection{Gantt Chart}
 The project timeline from initiation to completion is visualized below:
 
 \begin{table}[h]
     \centering
+    \small
+    \renewcommand{\arraystretch}{1.5}
     \resizebox{\textwidth}{!}{%
-        \begin{tabular}{|l|c|c|c|c|c|c|}
+        \begin{tabular}{|l|c|c|c|c|c|c|c|}
             \hline
-            \textbf{Milestone/Phase} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{Member(s) In-charge} \\ \hline
-                                                                                                                                             [Phase 1: Literature Review] & X &  &  &  &  & [Member Names] \\ \hline
-                                                                                                                                                                                                              [Phase 2: Data Collection/Prep] &  & X &  &  &  & [Member Names] \\ \hline
-                                                                                                                                                                                                                                                                                  [Phase 3: Model Development] &  &  & X &  &  & [Member Names] \\ \hline
-                                                                                                                                                                                                                                                                                                                                                   [Phase 4: Testing \& Validation] &  &  &  & X &  & [Member Names] \\ \hline
-                                                                                                                                                                                                                                                                                                                                                                                                                        [Phase 5: Final Documentation] &  &  &  &  & X & [Member Names] \\ \hline
+            \textbf{\makecell{Milestone \\ Description}} & \textbf{April} & \textbf{May} & \textbf{June} & \textbf{July} & \textbf{August} & \textbf{September} & \textbf{October} \\ \hline
+            
+            \makecell[l]{Proposal Submission \\ \& Presentation} & \makecell{Kavindu \\ Hiruni \\ Mihiran \\ Sachini} & & & & & & \\ \hline
+            
+            \makecell[l]{Data Collection \\ \& Preprocessing} & & \makecell{Mihiran \\ Kavindu} & & & & & \\ \hline
+            
+            \makecell[l]{Feature Engineering \\ \& Selection} & & \makecell{Hiruni \\ Sachini} & & & & & \\ \hline
+            
+            Interim Reporting & & & \makecell{Kavindu \\ Hiruni} & & & & \\ \hline
+            
+            \makecell[l]{Model Development \\ \& Training} & & & \makecell{Kavindu \\ Hiruni \\ Mihiran \\ Sachini} & \makecell{Kavindu \\ Hiruni \\ Mihiran \\ Sachini} & & & \\ \hline
+            
+            Evaluation \& Validation & & & & \makecell{Hiruni \\ Sachini} & & & \\ \hline
+            
+            Dashboard Development & & & & \makecell{Kavindu \\ Mihiran} & \makecell{Kavindu \\ Mihiran} & & \\ \hline
+            
+            Testing \& Paper Writing & & & & & \makecell{Mihiran \\ Sachini} & \makecell{Mihiran \\ Sachini} & \\ \hline
+            
+            Final Thesis Writing & & & \makecell{Kavindu \\ Hiruni \\ Sachini \\ Mihiran} & \makecell{Kavindu \\ Hiruni \\ Sachini \\ Mihiran} & \makecell{Kavindu \\ Hiruni \\ Sachini \\ Mihiran} & \makecell{Kavindu \\ Hiruni \\ Sachini \\ Mihiran} & \makecell{Kavindu \\ Hiruni \\ Sachini \\ Mihiran} \\ \hline
         \end{tabular}%
     }
-    \caption{Project Timeline and Milestones}
+    \caption{Project Milestone Schedule with Team Responsibility}
 \end{table}
 
-\subsection{Milestone Definitions}
-\begin{itemize}
-    \item \textbf{[Milestone 1]:} [Description of measurable outcome]
-    \item \textbf{[Milestone 2]:} [Description of measurable outcome]
-    \item \textbf{[Milestone 3]:} [Description of measurable outcome]
-    \item \textbf{[Milestone 4]:} [Description of measurable outcome]
-    \item \textbf{[Milestone 5]:} [Description of measurable outcome]
-\end{itemize}
 
-\noindent\textbf{Guidelines:}
-\begin{itemize}
-    \item Identify key milestones covering all major phases from initiation to completion
-    \item Assign team members to each milestone
-    \item Ensure milestones are measurable and achievable, representing significant outcomes or deliverables
-\end{itemize}
 
 % --- 7. REFERENCES ---
 
