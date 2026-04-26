@@ -137,6 +137,11 @@
       \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Tropica}
@@ -613,6 +618,9 @@
       \verb 10.1016/j.actatropica.2026.107992
       \endverb
     \endentry
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
     \entry{albannoud2026}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=3a585f988835c70362ed333e1c3d01cd}{%
@@ -666,6 +674,11 @@
       \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Tropica}
