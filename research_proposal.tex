@@ -123,7 +123,7 @@ A review of prior literature highlights a critical gap in turning high-accuracy 
 \section{Methodology}
 
 \subsection{Research Approach}
-This study uses a Quantitative Modeling and System Development approach. We focus on integrating multi-source data through a hybrid machine learning design to enable proactive dengue surveillance across all nine provinces. This strategy addresses the "Western Province Bias" by incorporating localized ecological dynamics from across the country \parencite{fernando2024}.
+This study utilizes a Quantitative Modeling and System Development approach. We focus on integrating multi-source data through a hybrid machine learning design to enable proactive dengue surveillance across all nine provinces. This strategy addresses the "Western Province Bias" by incorporating localized ecological dynamics from across the country \parencite{fernando2024}.
 
 \subsection{Data Strategy and Implementation Plan}
 The research follows a five-phase execution plan to transition from multi-source data collection to a functional software output:
@@ -131,21 +131,21 @@ The research follows a five-phase execution plan to transition from multi-source
 \begin{enumerate}
     \item \textbf{Data Collection:} 
     \begin{itemize}
-        \item \textbf{Epidemiological:} Weekly cases from Epidemiology Unit (2017--2026) \parencite{wickramathilaka2024}.
-        \item \textbf{Environmental:} Climate data (rainfall, temp, humidity) from the  Department of Meteorology \parencite{withanage2018}.
-        \item \textbf{Mobility \& Larval:} Commuter flow from transit hubs and PHI reports \parencite{karasinghe2024}.
+        \item \textbf{Epidemiological:} Weekly cases from the Epidemiology Unit (2017--2026) \parencite{wickramathilaka2024}.
+        \item \textbf{Environmental:} Rainfall, temperature, and humidity from the Department of Meteorology \parencite{withanage2018}.
+        \item \textbf{Mobility \& Larval:} Commuter flow from tranmit data  and PHI reports \parencite{karasinghe2024}.
     \end{itemize}
 
-    \item \textbf{Preprocessing \& Feature Engineering:} Data will be normalized and merged using Python (Pandas). Feature engineering will focus on:
+    \item \textbf{Preprocessing \& Feature Engineering:} Data will be merged using Python (Pandas). Engineering focus includes --8 week weather lags, Zone Indicators (Wet/Dry zones), and Transit Risk Indices to capture regional transmission dynamics.
+
+    \item \textbf{Modeling:} Comparison of LSTM (temporal patterns), LightGBM, and XGBoost (spatial variations) to identify the most robust forecasting architecture \parencite{albannoud2026, uduwanage2025}.
+
+    \item \textbf{Evaluation:} Models will be validated using a Walk-forward validation approach for 4-week lead-time performance.
     \begin{itemize}
-        \item \textbf{Lag Analysis:} Extracting 4--8 week weather lags to account for mosquito breeding and extrinsic incubation periods.
-        \item \textbf{Zone Indicators:} Incorporating binary indicators for Wet and Dry zones to handle varying regional transmission dynamics.
-        \item \textbf{Transit Risk:} Creating indices from transit hub activities.
+        \item \textbf{Metrics:} Accuracy is measured via regression (MAE, RMSE, MAPE) and time-series (forecast bias) metrics. 
+        \item \textbf{Outbreak Capability:} Classification metrics (Precision, Recall, F1-score, ROC-AUC) will be used against defined thresholds, with high priority on Recall to minimize missed outbreaks.
+        \item \textbf{Spatial Accuracy:} Comparing predicted versus actual hotspots across the nine provinces.
     \end{itemize}
-
-    \item \textbf{Modeling:} Comparison of LSTM (temporal patterns), LightGBM, and XGBoost (spatial variations) to identify the most robust architecture \parencite{albannoud2026, uduwanage2025}.
-
-    \item \textbf{Evaluation:} Validating 4-week lead-time accuracy using MAE and RMSE metrics to ensure reliable forecasting across diverse ecological zones.
 
     \item \textbf{Implementation:} Developing a React.js dashboard featuring spatial risk maps with Hotspot Marking and predictive trend alerts for outbreak prevention.
 \end{enumerate}
