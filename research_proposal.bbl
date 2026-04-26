@@ -434,6 +434,64 @@
       \field{pages}{262}
       \range{pages}{1}
     \endentry
+    \entry{zhang2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=5ee5d3d5470ac29a2e7c8df70ed54725}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e90e50a378e5407eee25308f1d9a3c0}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30c3519915a07c272d6fd946f3eaa35a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=188f0af61122d83fa9cf12ee529ab483}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{fullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{fullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{bibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorbibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authornamehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{authorfullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorfullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Urban Climate}
+      \field{title}{Decoding multi-frequency scale climate-dengue dynamics: An interpretable modeling framework}
+      \field{volume}{65}
+      \field{year}{2026}
+      \field{pages}{102734}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.uclim.2024.102734
+      \endverb
+    \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
     \entry{albannoud2026}{article}{}{}
@@ -851,9 +909,65 @@
       \field{pages}{262}
       \range{pages}{1}
     \endentry
+    \entry{zhang2026}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=5ee5d3d5470ac29a2e7c8df70ed54725}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e90e50a378e5407eee25308f1d9a3c0}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30c3519915a07c272d6fd946f3eaa35a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=188f0af61122d83fa9cf12ee529ab483}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{fullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{fullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{bibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorbibnamehash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authornamehash}{9d68f9635b7c1db697e909162e2280d3}
+      \strng{authorfullhash}{715e5a90faa24cbfd1a296f1248935fe}
+      \strng{authorfullhashraw}{715e5a90faa24cbfd1a296f1248935fe}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Urban Climate}
+      \field{title}{Decoding multi-frequency scale climate-dengue dynamics: An interpretable modeling framework}
+      \field{volume}{65}
+      \field{year}{2026}
+      \field{pages}{102734}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.uclim.2024.102734
+      \endverb
+    \endentry
   \enddatalist
-  \missing{bannoud2026}
-  \missing{chen2026}
 \endrefsection
 \endinput
 
