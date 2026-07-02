@@ -1,0 +1,129 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{booktabs} % For professional looking tables
+
+% --- Document Settings ---
+\onehalfspacing
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=black}
+
+% --- Title Page ---
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Large \textbf{Research Project - Intermediate Report}}\\[1.5cm]
+
+    {\huge \textbf{District-Level Dengue Outbreak Early Warning System for Sri Lanka}}\\[3cm]
+
+    \textbf{Group Number: Group 10}\\[4.5cm]
+
+    {\textbf{Group Members:}}\\[0.3cm]
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{Name}      & \textbf{Student ID} \\ \hline
+            Kavindu Amalka     & SE/2021/008         \\ \hline
+            Hiruni Imasha      & SE/2021/053         \\ \hline
+            Sandaru Mihiran    & SE/2021/010         \\ \hline
+            Sachini Weerakkody & SE/2021/018         \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \vfill
+    Date: \today
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% --- 1. INTRODUCTION & PROJECT OVERVIEW ---
+\section{Introduction \& Project Overview}
+
+Dengue fever remains a persistent and highly critical public health challenge in Sri Lanka. As outlined in our initial proposal, the reactive nature of current dengue outbreak management strategies highlights the urgent need for a proactive, predictive warning system. The primary goal of this research is to build a district-level early warning and risk-mapping system that forecasts cases 4 weeks in advance, enabling timely vector control interventions by Public Health Inspectors (PHIs) and optimized medical resource allocation.
+
+\subsection{Research Objectives}
+\begin{itemize}
+    \item \textbf{Data Fusion:} Integrate historical cases, meteorological factors, commuter mobility, and PHI larval report datasets.
+    \item \textbf{Mobility Modeling:} Incorporate bus/train transit flows to predict inter-district disease propagation patterns.
+    \item \textbf{Dual-Stream Modeling:} Implement Regression (case forecasting) and Classification (risk-level mapping) machine learning pipelines.
+    \item \textbf{Regional Adaptation:} Address the geographical variations between Dry and Wet zones.
+    \item \textbf{Decision-Support Interface:} Deliver an interactive dashboard for field workers and health authorities.
+\end{itemize}
+
+% --- 2. CURRENT PROGRESS ---
+\section{Current Progress}
+
+Since the approval of the research proposal, the team has focused on data collection, preprocessing, and preliminary model development in accordance with the milestone schedule.
+
+\subsection{Data Collection \& Integration Status}
+We have successfully gathered longitudinal weekly datasets spanning the years 2017--2026. The current state of data integration is summarized in Table~\ref{tab:data_status}.
+
+\begin{table}[h]
+    \centering
+    \small
+    \caption{Status of Data Source Ingestion}
+    \label{tab:data_status}
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{Data Stream} & \textbf{Source Institution} & \textbf{Status} \\
+        \midrule
+        Weekly Dengue Cases & Epidemiology Unit, Sri Lanka & Completed \\
+        Meteorological Data & Department of Meteorology & Completed \\
+        Commuter Flow Patterns & National Transit Authority / Public Data & In Progress \\
+        PHI Larval Survey Reports & Public Health Inspectorate & In Progress \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Preprocessing and Feature Engineering}
+Data cleaning and aligning are being performed in Python using Pandas. Key achievements in this phase include:
+\begin{itemize}
+    \item \textbf{Lag Analysis:} Establishing time-lag features (ranging from 1 to 8 weeks) for weather indicators (rainfall, temperature, and humidity) to capture delayed mosquito vector breeding responses.
+    \item \textbf{Zone Segmentation:} Annotating districts under Wet/Dry zone classifications to account for ecological and monsoon differences (Southwest vs. Northeast monsoons).
+\end{itemize}
+
+\subsection{Preliminary Modeling}
+We have initialized our baseline model training scripts. We are evaluating:
+\begin{itemize}
+    \item \textbf{LSTM Networks:} For capturing temporal patterns and long-term sequential dependencies in dengue cases.
+    \item \textbf{XGBoost \& LightGBM:} For tree-based ensemble learning incorporating tabular meteorological lags and regional indicator variables.
+\end{itemize}
+
+% --- 3. CHALLENGES & MITIGATION ---
+\section{Key Challenges \& Mitigation Strategies}
+
+During the initial phase, the team encountered a few challenges:
+\begin{itemize}
+    \item \textbf{Data Inconsistencies:} Minor gaps and reporting delays in weekly epidemiological reports. \\
+    \textit{Mitigation:} We applied linear interpolation and seasonal imputation techniques to ensure continuity in time-series training.
+    \item \textbf{Mobility Data Sparsity:} Lack of high-granularity mobile GPS logs for mobility indexing. \\
+    \textit{Mitigation:} We are approximating inter-district commuter flows using public transit frequency datasets and gravity models of population density.
+\end{itemize}
+
+% --- 4. FUTURE WORK AND TIMELINE ---
+\section{Future Work \& Project Schedule}
+In the coming weeks, our primary milestones include:
+\begin{enumerate}
+    \item \textbf{Finalizing Feature Selection:} Running recursive feature elimination (RFE) to isolate the most predictive indicators.
+    \item \textbf{Model Validation:} Executing walk-forward validation and evaluating against regression metrics (MAE, RMSE, MAPE) and classification metrics (Recall, Precision, F1-score).
+    \item \textbf{Dashboard Development:} Building the React.js web interface to display geographic hotspots and risk forecasts.
+\end{enumerate}
+
+\newpage
+% --- REFERENCES ---
+\printbibliography
+
+\end{document}
