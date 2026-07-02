@@ -52,78 +52,125 @@
 % --- 1. INTRODUCTION & PROJECT OVERVIEW ---
 \section{Introduction \& Project Overview}
 
-Dengue fever remains a persistent and highly critical public health challenge in Sri Lanka. As outlined in our initial proposal, the reactive nature of current dengue outbreak management strategies highlights the urgent need for a proactive, predictive warning system. The primary goal of this research is to build a district-level early warning and risk-mapping system that forecasts cases 4 weeks in advance, enabling timely vector control interventions by Public Health Inspectors (PHIs) and optimized medical resource allocation.
+Dengue fever is a critical, hyperendemic public health crisis in Sri Lanka. Its transmission is closely linked to seasonal monsoonal climate shifts, yet current national management strategies remain reactive, relying on retrospective hospital records rather than anticipation. Consequently, vector control measures are often deployed after outbreaks peak, causing sub-optimal medical resource allocation.  
 
+To transition from crisis management to proactive strategic prevention, this research introduces an early warning system covering all 26 Regional Director of Health Services (RDHS) areas across Sri Lanka. By leveraging machine learning architectures, the system integrates historical epidemiological trends with micro-climatic indicators to deliver a 4-week-ahead outbreak forecasting index. This early warning buffer empowers Public Health Inspectors (PHIs) to precision-target vector populations and mobilize emergency medical resources before clinical surges occur.  
 \subsection{Research Objectives}
 \begin{itemize}
-    \item \textbf{Data Fusion:} Integrate historical cases, meteorological factors, commuter mobility, and PHI larval report datasets.
-    \item \textbf{Mobility Modeling:} Incorporate bus/train transit flows to predict inter-district disease propagation patterns.
-    \item \textbf{Dual-Stream Modeling:} Implement Regression (case forecasting) and Classification (risk-level mapping) machine learning pipelines.
-    \item \textbf{Regional Adaptation:} Address the geographical variations between Dry and Wet zones.
-    \item \textbf{Decision-Support Interface:} Deliver an interactive dashboard for field workers and health authorities.
+    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit’s Weekly Epidemiological Reports with synchronized meteorological data (Rainfall, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS areas longitudinal panel dataset.
+    \item \textbf{Dual-Stream Modeling:} Implement parallel LSTM and XGBoost machine learning pipelines to execute Regression (case forecasting) and Classification (outbreak risk mapping) within a single execution block.
+    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics between Sri Lanka's Wet and Dry zones.
+    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 RDHS health administration regions simultaneously, overcoming the geographical limitations of prior localized studies.
+    \item \textbf{Decision-Support Interface:} Build an interactive React.js web dashboard that translates complex machine learning forecasts into intuitive geospatial risk visualizations for health authorities.
 \end{itemize}
 
-% --- 2. CURRENT PROGRESS ---
-\section{Current Progress}
 
-Since the approval of the research proposal, the team has focused on data collection, preprocessing, and preliminary model development in accordance with the milestone schedule.
+\clearpage
+% --- 2. COMPREHENSIVE LITERATURE REVIEW ---
+\section{Comprehensive Literature Review}
+\label{sec:lit_review}
 
-\subsection{Data Collection \& Integration Status}
-We have successfully gathered longitudinal weekly datasets spanning the years 2017--2026. The current state of data integration is summarized in Table~\ref{tab:data_status}.
+\subsection{Systematic Review of Relevant Sources}
+% TODO: Add systematic review of minimum 20 relevant sources.
+This subsection will present a systematic review of at least 20 relevant research papers, white papers, and articles concerning dengue forecasting, meteorological influence, human mobility modeling, and machine learning architectures.
+
+\subsection{Critical Analysis of Existing Work}
+% TODO: Compare and critically analyze previous methodologies (ARIMA, LSTM, XGBoost, etc.).
+A critical evaluation of existing studies will be detailed here, highlighting their strengths, weaknesses, geographical biases (e.g., Western Province bias), and gaps in translating model output into active systems.
+
+\subsection{Clear Positioning of Your Research}
+% TODO: Explain where this research fits and how it improves on existing methods.
+This section positions our research as a dual-stream forecasting and classification framework that incorporates environmental, mobility, and larval data specifically calibrated for the distinct wet/dry zones of Sri Lanka.
+
+\subsection{Journal/Conference Publication Plan}
+% TODO: Document plan for submitting a standalone literature review paper.
+Consideration of compiling this systematic review into a standalone literature review paper to be submitted to a relevant peer-reviewed journal or international conference.
+
+
+\clearpage
+% --- 3. SOLID EXPERIMENTAL SETUP / RESEARCH DESIGN ---
+\section{Experimental Setup \& Research Design}
+\label{sec:experimental_setup}
+
+\subsection{Detailed Methodology Description}
+% TODO: Describe the step-by-step methodology from data input to prediction.
+This section will describe the comprehensive quantitative and developmental research methodology employed to construct the early warning system.
+
+\subsection{Tools, Technologies, and Frameworks Selected}
+% TODO: Document the technical stack (Python, PyTorch/TensorFlow, Scikit-learn, React.js, etc.).
+The selected software development stack, machine learning libraries, data processing frameworks, and deployment platforms will be listed and justified here.
+
+\subsection{System Architecture or Research Framework}
+% TODO: Include a system architecture diagram or block diagram showing the data flow.
+A detailed description of the proposed system architecture, depicting the flow of data from ingestion, preprocessing, model inference (regression and classification streams), to the final user-facing dashboard.
+
+\subsection{Validation Approach}
+% TODO: Describe train/test splits, walk-forward validation, and metrics (MAE, RMSE, F1, Recall).
+This section details our validation strategy, including walk-forward validation for time-series forecasting, hyperparameter tuning techniques, and evaluation metrics.
+
+
+\clearpage
+% --- 4. DATA COLLECTION PROGRESS ---
+\section{Data Collection Progress}
+\label{sec:data_collection}
+
+\subsection{Data Sources Identified and Accessed}
+% TODO: Detail the institutional sources (Epidemiology Unit, Met Department, Transit authorities).
+Table~\ref{tab:data_sources} summarizes the data sources identified, accessed, and integrated into our data engineering pipeline.
 
 \begin{table}[h]
     \centering
-    \small
-    \caption{Status of Data Source Ingestion}
-    \label{tab:data_status}
-    \begin{tabular}{lll}
+    \caption{Identified and Accessed Data Sources}
+    \label{tab:data_sources}
+    \begin{tabular}{lllp{5cm}}
         \toprule
-        \textbf{Data Stream} & \textbf{Source Institution} & \textbf{Status} \\
+        \textbf{Dataset} & \textbf{Source Institution} & \textbf{Temporal Resolution} & \textbf{Access Status} \\
         \midrule
-        Weekly Dengue Cases & Epidemiology Unit, Sri Lanka & Completed \\
-        Meteorological Data & Department of Meteorology & Completed \\
-        Commuter Flow Patterns & National Transit Authority / Public Data & In Progress \\
-        PHI Larval Survey Reports & Public Health Inspectorate & In Progress \\
+        Epidemiological Cases & Epidemiology Unit & Weekly & Accessed \& Downloaded (2017--2026) \\
+        Meteorological Factors & Dept. of Meteorology & Weekly / Daily & Accessed (Rainfall, Temp, Humidity) \\
+        Commuter Flows & Transit Authorities & Static Network & Under Negotiation / Public Schedules \\
+        Larval Indices & PHI Reports & Monthly / Weekly & Under Request \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-\subsection{Preprocessing and Feature Engineering}
-Data cleaning and aligning are being performed in Python using Pandas. Key achievements in this phase include:
-\begin{itemize}
-    \item \textbf{Lag Analysis:} Establishing time-lag features (ranging from 1 to 8 weeks) for weather indicators (rainfall, temperature, and humidity) to capture delayed mosquito vector breeding responses.
-    \item \textbf{Zone Segmentation:} Annotating districts under Wet/Dry zone classifications to account for ecological and monsoon differences (Southwest vs. Northeast monsoons).
-\end{itemize}
+\subsection{Data Collection Methods Implemented}
+% TODO: Describe scripts, APIs, or scraping used to gather the data.
+Description of automated data retrieval scripts, manual collation processes, and pipeline steps implemented to download and store datasets.
 
-\subsection{Preliminary Modeling}
-We have initialized our baseline model training scripts. We are evaluating:
-\begin{itemize}
-    \item \textbf{LSTM Networks:} For capturing temporal patterns and long-term sequential dependencies in dengue cases.
-    \item \textbf{XGBoost \& LightGBM:} For tree-based ensemble learning incorporating tabular meteorological lags and regional indicator variables.
-\end{itemize}
+\subsection{Sample Data Collected and Documented}
+% TODO: Show statistical summaries or structures of the collected sample data.
+Sample data snippets, feature formats, schemas, and basic descriptive statistics will be documented in this section.
 
-% --- 3. CHALLENGES & MITIGATION ---
-\section{Key Challenges \& Mitigation Strategies}
+\subsection{Challenges in Data Acquisition}
+% TODO: Document challenges like missing data, administrative approvals, or API limitations.
+A discussion on data gaps, delays in administrative permissions, format inconsistencies, and the respective imputation/alignment methods used to address them.
 
-During the initial phase, the team encountered a few challenges:
-\begin{itemize}
-    \item \textbf{Data Inconsistencies:} Minor gaps and reporting delays in weekly epidemiological reports. \\
-    \textit{Mitigation:} We applied linear interpolation and seasonal imputation techniques to ensure continuity in time-series training.
-    \item \textbf{Mobility Data Sparsity:} Lack of high-granularity mobile GPS logs for mobility indexing. \\
-    \textit{Mitigation:} We are approximating inter-district commuter flows using public transit frequency datasets and gravity models of population density.
-\end{itemize}
 
-% --- 4. FUTURE WORK AND TIMELINE ---
-\section{Future Work \& Project Schedule}
-In the coming weeks, our primary milestones include:
-\begin{enumerate}
-    \item \textbf{Finalizing Feature Selection:} Running recursive feature elimination (RFE) to isolate the most predictive indicators.
-    \item \textbf{Model Validation:} Executing walk-forward validation and evaluating against regression metrics (MAE, RMSE, MAPE) and classification metrics (Recall, Precision, F1-score).
-    \item \textbf{Dashboard Development:} Building the React.js web interface to display geographic hotspots and risk forecasts.
-\end{enumerate}
+\clearpage
+% --- 5. PRELIMINARY RESULTS ---
+\section{Preliminary Results}
+\label{sec:preliminary_results}
+
+\subsection{Initial Findings or Prototype Functionality}
+% TODO: Describe the working baseline model or early dashboard prototype.
+Details regarding the baseline regression and classification models, as well as mockups/features of the early React.js dashboard layout.
+
+\subsection{Preliminary Analysis or Testing Results}
+% TODO: Share initial metric scores (e.g. baseline MAE, accuracy) of the models.
+Initial model performance values from training on historical Gampaha/Colombo district data.
+
+\subsection{Visualizations, Metrics, or Demonstrations}
+% TODO: Add preliminary charts showing case predictions vs actual historical trends.
+Graphical representations of case trends, feature correlations, and early spatial hazard maps.
+
+\subsection{Discussion of Early Insights}
+% TODO: Discuss what the early findings imply about predictability, weather lags, or mobility features.
+Insights drawn from early model outputs, such as the significance of 4--8 week temperature/rainfall lags and inter-district commuter risk indicators.
 
 \newpage
 % --- REFERENCES ---
+\nocite{*}
 \printbibliography
 
 \end{document}
