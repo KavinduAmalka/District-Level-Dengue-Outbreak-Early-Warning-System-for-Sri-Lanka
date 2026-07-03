@@ -5,8 +5,10 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{array}
+\usepackage{tabularx}
 \usepackage{setspace}
 \usepackage{xcolor}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{references.bib}
 \usepackage{hyperref}
@@ -161,7 +163,7 @@ The tools and technologies selected for this research are chosen based on data p
 \caption{Selected Tools, Technologies, and Frameworks}
 \label{tab:tools_technologies}
 \small
-\begin{tabular}{p{3.4cm} p{4.2cm} p{6.4cm}}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{4.2cm} >{\raggedright\arraybackslash}X}
 \toprule
 \textbf{Category} & \textbf{Selected Tools / Technologies} & \textbf{Purpose} \\
 \midrule
@@ -187,7 +189,7 @@ Dashboard development & Streamlit; React as optional enhancement & Building the 
 
 Version control & GitHub & Managing source code, documentation, experiment versions, and collaboration. \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 Python is selected because it provides strong support for data science, time-series modelling, machine learning, and deep learning. Pandas and NumPy will be used for preparing the district/RDHS-week dataset. The SARIMAX model will be implemented using statistical modelling libraries such as statsmodels or pmdarima. LightGBM will be used for the machine learning model because it is efficient for structured tabular data and supports feature importance analysis. LSTM will be implemented using either TensorFlow/Keras or PyTorch, depending on development convenience.
@@ -370,23 +372,25 @@ The master Excel database utilizes a standardized tabular schema containing thir
 \begin{table}[h]
 \centering
 \caption{Data Dictionary for the Master Registry}
-\begin{tabular}{|l|l|l|}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{|L{3.0cm}|L{2.3cm}|X|}
 \hline
 \textbf{Column Name} & \textbf{Data Type} & \textbf{Description / Operational Metric} \\ \hline
 Year & Numerical (Integer) & The calendar year of the recorded observation (2016 -- 2026). \\ \hline
-Month & Text (String) & The calendar month corresponding to the week's execution boundary. \\ \hline
-Week\_No & Numerical (Integer) & A continuous, global chronological week counter that increments sequentially across the entire 10-year timeline to map absolute temporal depth for LSTM tracking. \\ \hline
-Epi\_Week & Numerical (Integer) & Standardized Epidemiological Week index mapped according to the Ministry of Health calendar. \\ \hline
-Week\_Start & Date (YYYY-MM-DD) & The initial calendar starting date of the specific surveillance week. \\ \hline
-Week\_End & Date (YYYY-MM-DD) & The terminal ending date of the specific surveillance week. \\ \hline
-District & Text (String) & The primary administrative district classification (represented as textual string categorical data; e.g., "Colombo"). \\ \hline
-Zone & Text (String) & Climatic region categorization assigned to the RDHS area based on national agro-ecological boundaries (Categorical: "Wet", "Dry", or "Intermediate"). \\ \hline
-Temp\_C & Numerical (Float) & The mean weekly atmospheric temperature in degrees Celsius, aggregated from daily NASA POWER API inputs. \\ \hline
-Humidity\_\% & Numerical (Float) & The mean weekly atmospheric relative humidity percentage, sourced via NASA cloud logs. \\ \hline
-Precip\_mm & Numerical (Float) & The mean daily precipitation depth calculated across the 7-day epidemiological window. \\ \hline
-Rainfall\_Total\_mm & Numerical (Float) & The cumulative, total weekly rainfall depth in millimeters (summation of the 7-day precipitation block). \\ \hline
-Dengue Cases & Numerical (Integer) & Ground-truth target variable representing the total officially reported weekly dengue case count. \\ \hline
-\end{tabular}
+Month & Text (String) & The calendar month for the surveillance week. \\ \hline
+Week No & Numerical (Integer) & A continuous week counter over the 10-year timeline for LSTM sequence indexing. \\ \hline
+Epi Week & Numerical (Integer) & Standardized Epidemiological Week index from the Ministry of Health calendar. \\ \hline
+Week Start & Date (YYYY-MM-DD) & The start date of the surveillance week. \\ \hline
+Week End & Date (YYYY-MM-DD) & The end date of the surveillance week. \\ \hline
+District & Text (String) & Primary district name as text (e.g., Colombo). \\ \hline
+Zone & Text (String) & Climatic zone: Wet, Dry, or Intermediate. \\ \hline
+Temp C & Numerical (Float) & Weekly mean temperature in °C from NASA POWER. \\ \hline
+Humidity % & Numerical (Float) & Weekly mean relative humidity percentage. \\ \hline
+Precip mm & Numerical (Float) & Mean daily precipitation over the 7-day window. \\ \hline
+Rainfall Total mm & Numerical (Float) & Total weekly rainfall in mm, summed over 7 days. \\ \hline
+Dengue Cases & Numerical (Integer) & Total reported weekly dengue cases. \\ \hline
+\end{tabularx}
 \end{table}
 
 \subsubsection{Missing Value Resolution via Advanced Imputation}
