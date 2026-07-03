@@ -80,21 +80,52 @@ To transition from crisis management to proactive strategic prevention, this res
 \label{sec:lit_review}
 
 \subsection{Systematic Review of Relevant Sources}
-% TODO: Add systematic review of minimum 20 relevant sources.
-This subsection will present a systematic review of at least 20 relevant research papers, white papers, and articles concerning dengue forecasting, meteorological influence, human mobility modeling, and machine learning architectures.
+
+
+\subsubsection{Epidemiological Trends and Seasonal Dynamics}
+\begin{itemize}
+    \item Dengue is a hyperendemic disease in Sri Lanka, characterized by cyclic outbreak patterns and persistent year-round transmission.
+    \item Data from 2000–2020 confirms that major epidemic surges occurred in 2004, 2009, 2012, 2017, and 2019, with the 2017 outbreak reporting a record 186,101 cases.
+    \item Transmission is intrinsically linked to monsoon cycles, with two recurring peaks observed between May–July and October–January.
+    \item Spatial studies identify Colombo and Gampaha as high-burden hubs, while high-altitude regions like Nuwara Eliya maintain lower, stable risk levels.
+\end{itemize}
+
+\subsubsection{Methodological Evolution in Dengue Forecasting}
+\begin{itemize}
+    \item Baseline statistical models, such as ARIMA and SARIMAX, have been widely utilized for weekly and monthly dengue forecasting in districts like Colombo and Gampaha.
+    \item While effective for normal seasonality, research by Karasinghe et al. (2024) and Uduwanage et al. (2025) demonstrates that these models struggle during anomalous disruptions, such as the COVID-19 pandemic, where reporting and human mobility patterns shifted.
+    \item Conventional approaches often treat climate variables as linear inputs, failing to capture the complex, multi-frequency scale dynamics observed in dengue transmission.
+    \item Recent literature indicates that incorporating multi-frequency climate lags and causal pathways significantly improves short-term predictive accuracy.
+\end{itemize}
+
+\subsubsection{Advanced Machine Learning and Operational Decision Support}
+\begin{itemize}
+    \item Studies by Rahman et al. (2025) and Al Bannoud et al. (2026) advocate for the use of interpretable tree-based models like LightGBM and XGBoost, which allow for SHAP-based feature importance analysis.
+    \item Model robustness under extreme conditions is a critical requirement; research on virtual data augmentation shows that training on synthesized "extreme outbreak" scenarios prevents models from underestimating massive surges.
+    \item Operational gaps remain in traditional control, as identified by Rahulan et al. (2024), where the failure to convert data into evidence-based field instructions—rather than just predictive numbers—hampers effective dengue prevention in high-risk districts.
+\end{itemize}
+
+\subsubsection{Synthesized Research Positioning and Gap Analysis}
+\begin{itemize}
+    \item Current research is fragmented, with most studies limited to single districts, short time-periods, or narrow variable sets that exclude critical factors like population density, waste management, and social landscape indices.
+    \item There is a clear absence of a unified, national-level early warning system that integrates these multi-dimensional factors into a practical, real-time GIS-enabled decision support dashboard.
+    \item This study positions itself to bridge these gaps by synthesizing long-term longitudinal data with machine learning, focusing on district-specific climate lags and interpretable risk-visualization to assist public-health decision-makers.
+\end{itemize}
 
 \subsection{Critical Analysis of Existing Work}
-% TODO: Compare and critically analyze previous methodologies (ARIMA, LSTM, XGBoost, etc.).
-A critical evaluation of existing studies will be detailed here, highlighting their strengths, weaknesses, geographical biases (e.g., Western Province bias), and gaps in translating model output into active systems.
+\begin{itemize}
+    \item \textbf{Geographical and Temporal Scope Limitations:} While GIS-based spatial analysis and ARIMA-based forecasting are prevalent in local dengue research, a critical review shows that the vast majority of studies are confined to isolated districts, predominantly Colombo and Gampaha. Many analyses utilize short-term data windows (3–5 years), which are insufficient to capture long-term epidemiological trends, the impact of economic crises, or the significant reporting anomalies introduced by the COVID-19 pandemic.
+    \item \textbf{Methodological Rigidity:} Traditional statistical models like ARIMA often rely solely on historical dengue case counts, neglecting external drivers such as climate lags, vector density, and environmental sanitation indicators. Although newer studies have begun incorporating climate parameters, many fail to account for the "non-stationarity" of dengue drivers—where the same climatic factor (e.g., rainfall) can influence outbreak risk differently across distinct climate zones.
+    \item \textbf{Lack of Actionable Interpretability:} A recurring weakness in existing predictive models is their "black-box" nature. While they may yield high statistical accuracy, they often fail to provide the qualitative reasoning required by Public Health Inspectors (PHIs) and health authorities to choose specific, targeted field interventions. The literature emphasizes that forecasting is only useful if it is converted into actionable, district-specific alerts that integrate with existing public-health administrative protocols.
+\end{itemize}
 
-\subsection{Clear Positioning of Your Research}
-% TODO: Explain where this research fits and how it improves on existing methods.
-This section positions our research as a dual-stream forecasting and classification framework that incorporates environmental, mobility, and larval data specifically calibrated for the distinct wet/dry zones of Sri Lanka.
-
-\subsection{Journal/Conference Publication Plan}
-% TODO: Document plan for submitting a standalone literature review paper.
-Consideration of compiling this systematic review into a standalone literature review paper to be submitted to a relevant peer-reviewed journal or international conference.
-
+\subsection{Clear Positioning of Our Research}
+\begin{itemize}
+    \item \textbf{Bridging the Operational Gap:} Unlike existing literature that predominantly focuses on statistical forecasting accuracy alone, this research explicitly bridges the gap between predictive analytics and field-level public-health intervention. By integrating climate-lag features with operational decision-support modules, our framework provides actionable, district-specific alerts rather than just numerical forecasts.
+    \item \textbf{Methodological Hybridization:} We position our research as a methodological evolution from traditional univariate ARIMA/SARIMAX models to a multi-domain Hybrid LSTM-XGBoost framework. This framework allows us to capture both long-term temporal dependencies through LSTM blocks and complex spatial/environmental variations via XGBoost/LightGBM pipelines.
+    \item \textbf{Context-Aware Interpretability:} Recognizing the limitations of "black-box" models, this research embeds SHAP-based interpretability into the core dashboard design. This ensures that public-health officers can visualize not just the "risk level" for a district, but the specific contributing factors (e.g., rainfall lag, temperature thresholds, or environmental risk indices), thereby directly supporting targeted vector-control strategies.
+    \item \textbf{National Scalability with District-Level Granularity:} While previous studies are largely confined to isolated districts or short time-periods, our research contributes a scalable, all-district framework that accounts for the diverse spatiotemporal dynamics of Sri Lanka. By synthesizing long-term epidemiological ledger data with meteorological and socio-environmental indicators, we establish a robust, national-level early warning strategy that remains sensitive to the unique ecological and demographic nuances of each district.
+\end{itemize}
 
 \clearpage
 % --- 3. SOLID EXPERIMENTAL SETUP / RESEARCH DESIGN ---
@@ -304,38 +335,94 @@ The final selected model will be chosen based on both prediction performance and
 \section{Data Collection Progress}
 \label{sec:data_collection}
 
-\subsection{Data Sources Identified and Accessed}
-% TODO: Detail the institutional sources (Epidemiology Unit, Met Department, Transit authorities).
-Table~\ref{tab:data_sources} summarizes the data sources identified, accessed, and integrated into our data engineering pipeline.
+\subsection{Data Sources Identification and Access Portals}
+To engineer a highly resilient and statistically sound predictive framework, it was imperative to construct a multi-dimensional, long-term longitudinal dataset covering a 10-year historical window from January 2016 to May 31, 2026. The data ingestion phase focuses on capturing synchronized epidemiological and micro-climatic feature streams across all 26 Regional Director of Health Services (RDHS) areas in Sri Lanka.
+
+\subsubsection{Epidemiological Data Source: Ministry of Health Epidemiology Unit}
+The primary ground-truth source for historical dengue incidence was official national surveillance records compiled by the Ministry of Health, Sri Lanka. Data was systematically accessed and downloaded from the official repository (\url{https://www.epid.gov.lk/weekly-epidemiological-report/weekly-epidemiological-report}). Retrieved individual Weekly Epidemiological Report (WER) documents in PDF format were used, and for each Epi-Week, data was mapped against the 26 RDHS administrative health domains.
+
+\subsubsection{Meteorological Data Source: NASA POWER API Engine}
+Climate metrics were sourced using the NASA POWER (Prediction Of Worldwide Energy Resources) Data Access Viewer API. To match meteorological variables with the 26 RDHS health boundaries, the research calculated the unique geographical centroid coordinates (Latitude and Longitude) for each area. These were passed as localized spatial parameters into the API configuration. The engine fetched daily precipitation, relative humidity, and atmospheric temperature, which were subsequently synthesized into uniform weekly climate feature blocks.
+
+\subsection{Data Collection and Engineering Methods Implemented}
+\subsubsection{Manual Epidemiological Data Extraction Framework}
+Due to structural shifts and layout variations in WER PDF documents over the 10-year span, automated parsers introduced high tokenization error rates. To guarantee structural integrity, a rigorous manual extraction methodology was executed. Over 540 weekly PDF documents were individually reviewed, isolated into text-based repositories, and structured using spreadsheet-driven Text-to-Columns boundaries, indexed by Year, Epi-Week, and the 26 RDHS administrative domains.
+
+\subsubsection{Meteorological Feature Ingestion and API Query Configuration}
+A custom Python-based web application was architected using the Streamlit framework to automate communication with the NASA POWER API. Utilizing the Python requests library, the application dispatches parallel geospatial queries. Because the NASA POWER infrastructure supplies metrics at a daily resolution, a data engineering pipeline was built within the Pandas library to align the temporal scales. Daily observations were grouped into standardized 7-day epidemiological calendar windows. The aggregation logic computed:
+\begin{itemize}
+    \item Weekly mathematical Average (Mean) for Atmospheric Temperature.
+    \item Weekly mathematical Average (Mean) for Relative Humidity.
+    \item Weekly mathematical Average (Mean) for Precipitation.
+    \item A dedicated, cumulative feature column representing the Total Weekly Rainfall (summation of the 7-day precipitation block).
+\end{itemize}
+
+\subsubsection{Spatiotemporal Data Fusion \& Longitudinal Panel Dataset Alignment}
+A composite spatiotemporal key was established to join independent epidemiological and meteorological matrices, matching data rows based on a synchronized intersection of RDHS Area Name, Epi-Week Number, and Year. The finalized dataset forms a multi-variable panel configuration containing over a decade of continuous weekly observations.
+
+\subsection{Sample Dataset Architecture and Documentation}
+\subsubsection{Spatial Granularity and Longitudinal Framework}
+The dataset is a balanced longitudinal panel matrix. For every distinct Epi-Week within the 10-year horizon, the database instantiates exactly 26 independent rows, ensuring that the sequential machine learning models (LSTM) capture concurrent, parallel spatial-temporal interactions.
+
+\subsubsection{Schema Definition and Data Dictionary}
+The master Excel database utilizes a standardized tabular schema containing thirteen explicit feature columns. The precise feature vector parameters are detailed in the data dictionary table below:
 
 \begin{table}[h]
-    \centering
-    \caption{Identified and Accessed Data Sources}
-    \label{tab:data_sources}
-    \begin{tabular}{lllp{5cm}}
-        \toprule
-        \textbf{Dataset} & \textbf{Source Institution} & \textbf{Temporal Resolution} & \textbf{Access Status} \\
-        \midrule
-        Epidemiological Cases & Epidemiology Unit & Weekly & Accessed \& Downloaded (2017--2026) \\
-        Meteorological Factors & Dept. of Meteorology & Weekly / Daily & Accessed (Rainfall, Temp, Humidity) \\
-        Commuter Flows & Transit Authorities & Static Network & Under Negotiation / Public Schedules \\
-        Larval Indices & PHI Reports & Monthly / Weekly & Under Request \\
-        \bottomrule
-    \end{tabular}
+\centering
+\caption{Data Dictionary for the Master Registry}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Column Name} & \textbf{Data Type} & \textbf{Description / Operational Metric} \\ \hline
+Year & Numerical (Integer) & The calendar year of the recorded observation (2016 -- 2026). \\ \hline
+Month & Text (String) & The calendar month corresponding to the week's execution boundary. \\ \hline
+Week\_No & Numerical (Integer) & A continuous, global chronological week counter that increments sequentially across the entire 10-year timeline to map absolute temporal depth for LSTM tracking. \\ \hline
+Epi\_Week & Numerical (Integer) & Standardized Epidemiological Week index mapped according to the Ministry of Health calendar. \\ \hline
+Week\_Start & Date (YYYY-MM-DD) & The initial calendar starting date of the specific surveillance week. \\ \hline
+Week\_End & Date (YYYY-MM-DD) & The terminal ending date of the specific surveillance week. \\ \hline
+District & Text (String) & The primary administrative district classification (represented as textual string categorical data; e.g., "Colombo"). \\ \hline
+Zone & Text (String) & Climatic region categorization assigned to the RDHS area based on national agro-ecological boundaries (Categorical: "Wet", "Dry", or "Intermediate"). \\ \hline
+Temp\_C & Numerical (Float) & The mean weekly atmospheric temperature in degrees Celsius, aggregated from daily NASA POWER API inputs. \\ \hline
+Humidity\_\% & Numerical (Float) & The mean weekly atmospheric relative humidity percentage, sourced via NASA cloud logs. \\ \hline
+Precip\_mm & Numerical (Float) & The mean daily precipitation depth calculated across the 7-day epidemiological window. \\ \hline
+Rainfall\_Total\_mm & Numerical (Float) & The cumulative, total weekly rainfall depth in millimeters (summation of the 7-day precipitation block). \\ \hline
+Dengue Cases & Numerical (Integer) & Ground-truth target variable representing the total officially reported weekly dengue case count. \\ \hline
+\end{tabular}
 \end{table}
 
-\subsection{Data Collection Methods Implemented}
-% TODO: Describe scripts, APIs, or scraping used to gather the data.
-Description of automated data retrieval scripts, manual collation processes, and pipeline steps implemented to download and store datasets.
+\subsubsection{Missing Value Resolution via Advanced Imputation}
+During the manual compilation of historical epidemiological data from the Weekly Epidemiological Reports, data fragmentation anomalies were identified due to localized reporting gaps or institutional archiving failures within specific historical years.
 
-\subsection{Sample Data Collected and Documented}
-% TODO: Show statistical summaries or structures of the collected sample data.
-Sample data snippets, feature formats, schemas, and basic descriptive statistics will be documented in this section.
+\begin{itemize}
+    \item \textbf{Handling Strategy:} Leaving these fields vacant as null strings or setting them to zero would corrupt the sequential longitudinal dependency vectors required by the LSTM architectures. Dropping the rows would similarly compromise the chronological consistency of the time series.
+    \item \textbf{Imputation Protocol:} To preserve structural continuity, a Linear Interpolation Framework was adopted using the Python Pandas library. Missing values in the Dengue Cases column were mathematically imputed based on the linear trend line bound between the closest preceding and succeeding valid data boundaries within that specific RDHS zone. This advanced statistical masking ensures an uninterrupted temporal matrix ready for model ingestion.
+\end{itemize}
 
-\subsection{Challenges in Data Acquisition}
-% TODO: Document challenges like missing data, administrative approvals, or API limitations.
-A discussion on data gaps, delays in administrative permissions, format inconsistencies, and the respective imputation/alignment methods used to address them.
+\subsection{Data Acquisition Challenges and Risk Mitigations}
+Constructing a highly precise, long-term longitudinal framework across heterogeneous data environments presented significant institutional, financial, and structural bottlenecks. This section systematically details the real-world challenges encountered during the data engineering phase and the strategic risk mitigations implemented to ensure project continuity.
 
+\subsubsection{Institutional Barriers \& Privacy Restrictions in Telecommunication Mobility Datasets}
+Our initial research strategy aimed to fuse human mobility vectors derived from mobile network telemetry to model inter-district vector propagation.
+
+\begin{itemize}
+    \item \textbf{The Challenge:} To execute this, the team initiated formal communication channels and direct physical consultations with major national telecommunication service providers, including Dialog Axiata, Mobitel, and Sri Lanka Telecom (SLT). However, these attempts were ultimately unsuccessful due to rigid corporate data governance frameworks, proprietary security constraints, and strict national data protection laws that prohibit the external release of raw subscriber call detail records (CDRs) or location logs.
+    \item \textbf{The Mitigation:} To resolve this roadblock without compromising the analytical depth of the study, a formal scoping realignment was approved by the project supervisor. The human mobility indicator was officially de-scoped from the framework. To offset this reduction in variables, the geographical scope of the machine learning pipeline was scaled up from a localized regional footprint to cover all 26 RDHS administrative health zones simultaneously, shifting the predictive focus toward high-resolution spatiotemporal climate indicators.
+\end{itemize}
+
+\subsubsection{Financial Procurement Constraints for National Meteorological Data}
+To develop a predictive framework capable of identifying long-term epidemiological trends, continuous daily and weekly historical climate vectors were required since January 2016.
+
+\begin{itemize}
+    \item \textbf{The Challenge:} The team formally explored the acquisition of official meteorological records from the Department of Meteorology, Sri Lanka. However, obtaining continuous, localized panel data for rainfall, temperature, and humidity across all target administrative regions involved highly prohibitive financial procurement costs that vastly exceeded our undergraduate research budgetary limitations.
+    \item \textbf{The Mitigation:} To bypass this financial constraint while preserving scientific validity, alternative cloud-based earth observation systems were extensively researched. The team successfully engineered an automated ingestion pipeline utilizing the NASA POWER API infrastructure (funded by the United States Government). Because these datasets are generated through verified global satellite data assimilation models and global grid interpolations, they provided peer-reviewed, high-resolution climatic indicators for our specific 26 RDHS coordinate boundaries completely free of cost.
+\end{itemize}
+
+\subsubsection{Layout Irregularities and Structural Inconsistencies in Weekly PDF Reports}
+The extraction of weekly dengue infection metrics directly from the Weekly Epidemiological Reports (WER) compiled by the Ministry of Health presented severe syntactic layout challenges.
+
+\begin{itemize}
+    \item \textbf{The Challenge:} Spanning over a decade, these historical source documents were published in static PDF formats with frequent structural variations. Automated digital parsing tools and text-extraction scripts continuously failed or introduced extreme tokenization errors due to shifting table coordinates, overlapping column boundaries, dual-language string formatting, and inconsistent scanning qualities across different annual archives.
+    \item \textbf{The Mitigation:} To enforce absolute data accuracy—which is paramount for training deep learning sequences like LSTMs—the team discarded volatile automated parsing scripts in favor of a rigorous manual pipeline. Every single weekly document was individually processed using a strict Delimiter Copy-Paste Framework. The raw tabular segments were isolated, extracted into plaintext editors to preserve tab-separated boundaries, compiled systematically into spreadsheet environments, and parsed cleanly using native 'Text to Columns' spacing parameters to construct an error-free ground-truth master database.
+\end{itemize}
 
 \clearpage
 % --- 5. PRELIMINARY RESULTS ---
