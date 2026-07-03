@@ -12,6 +12,15 @@
 \usepackage{hyperref}
 \usepackage{makecell}
 \usepackage{booktabs} % For professional looking tables
+\usepackage{tikz}
+\usetikzlibrary{
+    positioning,
+    arrows.meta,
+    shapes.geometric,
+    shapes.misc,
+    calc
+}
+
 
 % --- Document Settings ---
 \onehalfspacing
@@ -93,16 +102,201 @@ Consideration of compiling this systematic review into a standalone literature r
 \label{sec:experimental_setup}
 
 \subsection{Detailed Methodology Description}
-% TODO: Describe the step-by-step methodology from data input to prediction.
+
+This research follows a quantitative experimental research design combined with a software prototype development approach. The main objective is to develop a district/RDHS-level dengue early warning framework for Sri Lanka using weekly dengue case data and NASA POWER weather data. The system is designed to predict dengue risk four weeks ahead, so that public-health officers can identify possible outbreak situations before they become severe.
+
+The experimental setup uses two main data sources. The first source is weekly district/RDHS-level dengue case data obtained from the Weekly Epidemiological Reports published by the Epidemiology Unit, Ministry of Health, Sri Lanka. This dataset provides the historical dengue case counts used as the target variable. The second source is NASA POWER weather data, extracted through the NASA POWER API using representative coordinates for each district/RDHS area. In this study, the main weather variables are rainfall, temperature, and humidity.
+
+The first stage of the methodology is data collection. Weather data are extracted from the NASA POWER API for each selected district/RDHS area. Dengue case values are then integrated into the weather dataset by matching the district/RDHS area and epidemiological week. This creates a consistent weekly dataset that combines dengue incidence and weather conditions.
+
+The second stage is data preprocessing and integration. The weather dataset is prepared by formatting district names, dates, year values, week numbers, and epidemiological week fields. Daily NASA POWER weather records are converted into weekly summaries to match the weekly dengue case data. Rainfall is represented as weekly rainfall, while temperature and humidity are represented using weekly average values. After this preparation, dengue and weather data are merged using district/RDHS area, year, and epidemiological week as common fields. The final dataset is structured as a district/RDHS-week panel dataset, where each row represents one district or RDHS reporting area in one specific epidemiological week.
+
+The third stage is exploratory data analysis and climate-lag analysis. Climate-lag analysis means identifying the delayed effect of weather conditions on dengue cases. Dengue cases usually do not increase immediately after rainfall or changes in humidity and temperature. There is normally a delay because rainfall creates mosquito breeding places, mosquitoes develop, transmission occurs, and patients are reported later. Therefore, this research tests different lag periods, such as 1-week, 2-week, 3-week, up to 12-week weather lags. This helps identify which weather conditions are most strongly related to dengue increases after a delay. The lag analysis will be performed district-wise and, where possible, by climate zone such as wet zone, dry zone, and intermediate zone.
+
+The fourth stage is feature engineering. Feature engineering means creating additional model input variables from the original dengue and weather data. These features help the models learn delayed and seasonal dengue patterns. Dengue history features may include previous week cases, two-week lag cases, four-week lag cases, and rolling average case counts. Weather features may include rainfall lag, temperature lag, humidity lag, and rolling weather averages. A rolling average means the average value over recent weeks, such as the average dengue cases during the previous four weeks. Seasonal features such as epidemiological week, month, Southwest monsoon, Northeast monsoon, and inter-monsoon periods will also be added. These features help the models learn both short-term and seasonal dengue behaviour.
+
+The fifth stage is comparative modelling. This research compares three representative modelling approaches: SARIMAX, LightGBM, and LSTM. SARIMAX is selected as the main statistical baseline because it can model time-series seasonality and external weather variables, and it has shown strong performance in Sri Lankan dengue forecasting literature. LightGBM is selected as the machine learning model because it can handle nonlinear relationships in tabular data, such as dengue lags, weather lags, monsoon indicators, and district-level features. LSTM is selected as the deep learning model because it can learn sequential patterns from previous weeks of dengue and weather data.
+
+The modelling output follows a dual-stream prediction design. The first stream is a regression stream, where the model predicts the expected number of dengue cases four weeks ahead. The second stream is a classification stream, where the system predicts whether a district/RDHS area is likely to enter an outbreak or high-risk condition four weeks ahead. For classification, a district-specific alert threshold can be created using historical dengue case patterns, such as historical mean plus two standard deviations. This allows the system to provide both a numerical forecast and a practical warning decision.
+
+After model training, the models will be evaluated using regression and classification metrics to identify the most suitable model for dashboard integration. The final stage is dashboard prototype development. The dashboard prototype will mainly display predicted dengue case counts, alert status, dengue trends, and weather trends. If implementation time allows, district risk maps and main contributing weather-lag factors will also be included. This makes the research useful not only as a prediction experiment but also as a public-health decision-support system.
 
 \subsection{Tools, Technologies, and Frameworks Selected}
-% TODO: Document the technical stack (Python, PyTorch/TensorFlow, Scikit-learn, React.js, etc.).
+
+The tools and technologies selected for this research are chosen based on data processing, modelling, evaluation, explainability, and dashboard development requirements.
+
+\begin{table}[htbp]
+\centering
+\caption{Selected Tools, Technologies, and Frameworks}
+\label{tab:tools_technologies}
+\small
+\begin{tabular}{p{3.4cm} p{4.2cm} p{6.4cm}}
+\toprule
+\textbf{Category} & \textbf{Selected Tools / Technologies} & \textbf{Purpose} \\
+\midrule
+Programming language & Python & Main language for data processing, modelling, and evaluation. \\
+
+Data handling & Pandas, NumPy & Preparing the weather dataset, integrating dengue case values, generating features, and analysing dengue-weather patterns. \\
+
+Weather data source & NASA POWER API & Collecting rainfall, temperature, and humidity values using representative district/RDHS coordinates. \\
+
+Statistical modelling & statsmodels / pmdarima & Developing and testing SARIMAX time-series models. \\
+
+Machine learning & LightGBM, scikit-learn & Training LightGBM models and supporting preprocessing, validation, and metric calculation. \\
+
+Deep learning & TensorFlow/Keras or PyTorch & Developing LSTM-based time-series models to learn sequential dengue-weather patterns. \\
+
+Visualization & Matplotlib, Plotly & Creating dengue trend graphs, weather graphs, lag-analysis plots, model result visualizations, and interactive dashboard charts. \\
+
+Explainability & SHAP / Feature importance & Explaining which features contribute most to dengue predictions, especially for the LightGBM model. \\
+
+Model evaluation & scikit-learn metrics, NumPy, Pandas & Calculating MAE, RMSE, MAPE, Precision, Recall, F1-score, and ROC-AUC. \\
+
+Dashboard development & Streamlit; React as optional enhancement & Building the early warning dashboard prototype. Streamlit is suitable for fast Python-based dashboard development, while React may be considered later for a more customized frontend. \\
+
+Version control & GitHub & Managing source code, documentation, experiment versions, and collaboration. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Python is selected because it provides strong support for data science, time-series modelling, machine learning, and deep learning. Pandas and NumPy will be used for preparing the district/RDHS-week dataset. The SARIMAX model will be implemented using statistical modelling libraries such as statsmodels or pmdarima. LightGBM will be used for the machine learning model because it is efficient for structured tabular data and supports feature importance analysis. LSTM will be implemented using either TensorFlow/Keras or PyTorch, depending on development convenience.
+
+Matplotlib will be used for static analysis graphs in the report, while Plotly will be used for interactive dashboard visualizations. SHAP or feature importance will be used to explain which variables influenced the model prediction. For example, the system can show whether a high-risk alert was mainly influenced by recent dengue increase, rainfall several weeks earlier, high humidity, or monsoon-period effects.
 
 \subsection{Research Framework}
-% TODO: Include a system architecture diagram or block diagram showing the data flow.
+
+The proposed research framework contains seven main stages: data acquisition, data preprocessing and integration, exploratory data analysis and climate-lag analysis, feature engineering, comparative modelling, validation and evaluation, and dashboard prototype development.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{0.95\textwidth}{!}{
+\begin{tikzpicture}[
+    node distance=1.15cm,
+    every node/.style={font=\small},
+    input/.style={rectangle, rounded corners, draw=blue!70, fill=blue!10, thick, align=center, minimum width=4.6cm, minimum height=1cm},
+    process/.style={rectangle, rounded corners, draw=gray!80, fill=gray!10, thick, align=center, minimum width=7.2cm, minimum height=1.1cm},
+    model/.style={rectangle, rounded corners, draw=orange!80, fill=orange!15, thick, align=center, minimum width=3.4cm, minimum height=1cm},
+    output/.style={rectangle, rounded corners, draw=green!70!black, fill=green!10, thick, align=center, minimum width=4.2cm, minimum height=1cm},
+    arrow/.style={-Latex, thick}
+]
+
+\node[input] (dengue) {Weekly Dengue Case Data\\Epidemiology Unit / WER};
+\node[input, right=1.4cm of dengue] (weather) {NASA POWER Weather Data\\Rainfall, Temperature, Humidity};
+
+\node[process, below=1.2cm of $(dengue)!0.5!(weather)$] (prep) {Data Preprocessing \& Integration\\District/RDHS + Year + Epidemiological Week};
+\node[process, below=of prep] (eda) {Exploratory Data Analysis\\District trends, weather trends, wet/dry-zone patterns};
+\node[process, below=of eda] (lag) {Climate-Lag Analysis\\Testing 1 to 12 week weather lags};
+\node[process, below=of lag] (feature) {Feature Engineering\\Dengue lags, weather lags, rolling averages, monsoon and zone features};
+
+\node[model, below left=1.2cm and 2.6cm of feature] (sarimax) {SARIMAX\\Statistical Baseline};
+\node[model, below=1.2cm of feature] (lgbm) {LightGBM\\Machine Learning Model};
+\node[model, below right=1.2cm and 2.6cm of feature] (lstm) {LSTM\\Deep Learning Model};
+
+\node[process, below=1.5cm of lgbm] (dual) {Dual Prediction Output\\Regression: 4-week-ahead case count\\Classification: Alert / No Alert};
+\node[process, below=of dual] (validation) {Validation \& Evaluation\\MAE, RMSE, MAPE, Precision, Recall, F1-score, ROC-AUC};
+\node[output, below=of validation] (dashboard) {Early Warning Dashboard Prototype\\Predicted cases, alert level, trends, optional risk map};
+
+\draw[arrow] (dengue) -- (prep);
+\draw[arrow] (weather) -- (prep);
+\draw[arrow] (prep) -- (eda);
+\draw[arrow] (eda) -- (lag);
+\draw[arrow] (lag) -- (feature);
+\draw[arrow] (feature) -- (sarimax);
+\draw[arrow] (feature) -- (lgbm);
+\draw[arrow] (feature) -- (lstm);
+\draw[arrow] (sarimax) -- (dual);
+\draw[arrow] (lgbm) -- (dual);
+\draw[arrow] (lstm) -- (dual);
+\draw[arrow] (dual) -- (validation);
+\draw[arrow] (validation) -- (dashboard);
+
+\end{tikzpicture}
+}
+\caption{Proposed dengue early warning research framework}
+\label{fig:research_framework}
+\end{figure}
+
+The framework is designed to support four-week-ahead dengue early warning. The input layer contains weekly dengue case data and NASA POWER weather data. The preprocessing layer converts all data into a common district/RDHS-week format. The analysis layer studies dengue trends, weather patterns, wet-zone and dry-zone differences, and delayed climate effects. The feature engineering layer creates model-ready variables such as dengue lags, weather lags, rolling averages, monsoon indicators, and climate-zone indicators.
+
+The modelling layer compares SARIMAX, LightGBM, and LSTM under the same prediction setup. SARIMAX acts as the statistical baseline model. LightGBM acts as the main machine learning model for structured lag-based features. LSTM acts as the deep learning sequence model. This comparison allows the research to evaluate whether statistical, machine learning, or deep learning approaches are more suitable for Sri Lankan district/RDHS-level dengue early warning using NASA POWER weather data.
+
+The output layer produces both predicted case counts and outbreak alerts. The validation and evaluation layer checks whether the models are reliable before integrating the selected model into the dashboard. Finally, the dashboard layer presents the results in a practical format for decision-making.
 
 \subsection{Validation Approach}
-% TODO: Describe train/test splits, walk-forward validation, and metrics (MAE, RMSE, F1, Recall).
+
+The validation approach is designed to test the models under realistic forecasting conditions. Since dengue forecasting is a time-series problem, random train-test splitting is not suitable. Random splitting can mix past and future data, which may give unrealistic performance. Therefore, this research will use walk-forward validation.
+
+In walk-forward validation, the model is trained using past data and tested on future data. This better represents a real early warning system because the model must always predict future dengue risk using only information available up to the current week.
+
+An example validation setup is shown below:
+
+\begin{center}
+\begin{tabular}{p{5cm} p{5cm}}
+\toprule
+\textbf{Training Period} & \textbf{Testing Period} \\
+\midrule
+2017--2020 & 2021 \\
+2017--2021 & 2022 \\
+2017--2022 & 2023 \\
+2017--2023 & 2024 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All models will be evaluated using the same dataset, same prediction horizon, and same validation method. This ensures a fair comparison between SARIMAX, LightGBM, and LSTM. Before validation, the dataset will be checked to ensure that dengue cases are correctly aligned with the same district/RDHS area and epidemiological week as the weather variables.
+
+For the regression stream, the models will be evaluated using the metrics shown in Table~\ref{tab:regression_metrics}.
+
+\begin{table}[htbp]
+\centering
+\caption{Regression Evaluation Metrics}
+\label{tab:regression_metrics}
+\begin{tabular}{p{3.5cm} p{9cm}}
+\toprule
+\textbf{Metric} & \textbf{Purpose} \\
+\midrule
+MAE & Measures the average size of prediction errors. \\
+
+RMSE & Penalizes larger prediction errors more strongly. \\
+
+MAPE & Shows prediction error as a percentage. \\
+
+Forecast bias & Shows whether the model usually overpredicts or underpredicts. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the classification stream, the models will be evaluated using the metrics shown in Table~\ref{tab:classification_metrics}.
+
+\begin{table}[htbp]
+\centering
+\caption{Classification Evaluation Metrics}
+\label{tab:classification_metrics}
+\begin{tabular}{p{3.5cm} p{9cm}}
+\toprule
+\textbf{Metric} & \textbf{Purpose} \\
+\midrule
+Precision & Measures how many predicted alerts were actually correct. \\
+
+Recall & Measures how many real outbreak situations were detected. \\
+
+F1-score & Balances precision and recall. \\
+
+ROC-AUC & Measures the model's ability to separate alert and non-alert situations. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In outbreak prediction, recall is especially important because missing a real outbreak can be more harmful than issuing a false warning. Therefore, the final model selection will consider not only overall accuracy but also the model's ability to detect high-risk dengue situations early.
+
+The final selected model will be chosen based on both prediction performance and practical usefulness. A model with slightly lower numerical accuracy but better outbreak detection and interpretability may be more useful for a public-health early warning system. Therefore, the validation process will consider regression accuracy, classification performance, alert reliability, and interpretability before selecting the final model for dashboard integration.
+
+
+
+
+
+
+
 
 
 \clearpage
