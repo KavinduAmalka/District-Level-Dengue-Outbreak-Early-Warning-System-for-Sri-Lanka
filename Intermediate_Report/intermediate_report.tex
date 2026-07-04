@@ -138,13 +138,11 @@ To transition from crisis management to proactive strategic prevention, this res
 
 This research follows a quantitative experimental research design combined with a software prototype development approach. The main objective is to develop a district/RDHS-level dengue early warning framework for Sri Lanka using weekly dengue case data and NASA POWER weather data. The system is designed to predict dengue risk four weeks ahead, so that public-health officers can identify possible outbreak situations before they become severe.
 
-The experimental setup uses two main data sources. The first source is weekly district/RDHS-level dengue case data obtained from the Weekly Epidemiological Reports published by the Epidemiology Unit, Ministry of Health, Sri Lanka. This dataset provides the historical dengue case counts used as the target variable. The second source is NASA POWER weather data, extracted through the NASA POWER API using representative coordinates for each district/RDHS area. In this study, the main weather variables are rainfall, temperature, and humidity.
+The first phase of the methodology focuses on data collection from two primary sources. Weekly district/RDHS-level dengue case data is obtained from the Weekly Epidemiological Reports published by the Epidemiology Unit, Ministry of Health, Sri Lanka. This dataset provides historical dengue incidence counts, which are used as the target variable in the study. The second source is meteorological data retrieved from the NASA POWER API using representative geographic coordinates for all 25 districts of Sri Lanka, along with Kalmunai as an additional administrative unit. The key weather variables considered include rainfall, temperature, and relative humidity. To automate data retrieval, a Python-based web application was developed using the Streamlit framework, enabling users to select a custom date range and extract weather data for all districts simultaneously. Since NASA POWER provides daily-resolution data, the system aggregates these values into weekly summaries using the Pandas library, ensuring compatibility with epidemiological reporting. The resulting weather data is then aligned with dengue case records based on district/RDHS area and epidemiological week.
 
-The first stage of the methodology is data collection. Weather data are extracted from the NASA POWER API for each selected district/RDHS area. Dengue case values are then integrated into the weather dataset by matching the district/RDHS area and epidemiological week. This creates a consistent weekly dataset that combines dengue incidence and weather conditions.
+The second phase involves data preprocessing and integration to construct a unified analytical dataset. Weather data is standardized by formatting district names, calendar years, dates, and epidemiological week identifiers to ensure consistency across all records. Daily meteorological observations are converted into weekly aggregates, where rainfall is represented as total weekly rainfall, while temperature and humidity are computed as weekly average values. The dengue and weather datasets are then merged using common fields such as district/RDHS area, year, and epidemiological week. The final output is a structured district/RDHS-week panel dataset, where each record represents a specific geographic area in a given epidemiological week, containing both dengue incidence and corresponding weather conditions.
 
-The second stage is data preprocessing and integration. The weather dataset is prepared by formatting district names, dates, year values, week numbers, and epidemiological week fields. Daily NASA POWER weather records are converted into weekly summaries to match the weekly dengue case data. Rainfall is represented as weekly rainfall, while temperature and humidity are represented using weekly average values. After this preparation, dengue and weather data are merged using district/RDHS area, year, and epidemiological week as common fields. The final dataset is structured as a district/RDHS-week panel dataset, where each row represents one district or RDHS reporting area in one specific epidemiological week.
-
-The third stage is exploratory data analysis and climate-lag analysis. Climate-lag analysis means identifying the delayed effect of weather conditions on dengue cases. Dengue cases usually do not increase immediately after rainfall or changes in humidity and temperature. There is normally a delay because rainfall creates mosquito breeding places, mosquitoes develop, transmission occurs, and patients are reported later. Therefore, this research tests different lag periods, such as 1-week, 2-week, 3-week, up to 12-week weather lags. This helps identify which weather conditions are most strongly related to dengue increases after a delay. The lag analysis will be performed district-wise and, where possible, by climate zone such as wet zone, dry zone, and intermediate zone.
+The third phase of the study focuses on exploratory data analysis (EDA) and climate-lag analysis. Climate-lag analysis is used to identify the delayed effect of weather conditions on dengue transmission, since changes in rainfall, temperature, and humidity do not result in immediate increases in dengue cases. Instead, there is a biological and epidemiological delay due to mosquito breeding cycles, vector development, and reporting time. To capture this relationship, different lag periods ranging from 1-week to 12-weeks are tested to determine which weather conditions show the strongest delayed association with dengue incidence across districts and, where applicable, across climate zones such as wet, dry, and intermediate zones. In addition, exploratory analysis is performed using Power BI to visualize temporal and spatial patterns in the dataset. Time-series visualizations, such as the weekly dengue trend chart, are generated to observe outbreak peaks, seasonal fluctuations, and long-term variations in dengue incidence, supporting the identification of epidemic periods and potential weather–disease relationships.
 
 The fourth stage is feature engineering. Feature engineering means creating additional model input variables from the original dengue and weather data. These features help the models learn delayed and seasonal dengue patterns. Dengue history features may include previous week cases, two-week lag cases, four-week lag cases, and rolling average case counts. Weather features may include rainfall lag, temperature lag, humidity lag, and rolling weather averages. A rolling average means the average value over recent weeks, such as the average dengue cases during the previous four weeks. Seasonal features such as epidemiological week, month, Southwest monsoon, Northeast monsoon, and inter-monsoon periods will also be added. These features help the models learn both short-term and seasonal dengue behaviour.
 
@@ -152,7 +150,9 @@ The fifth stage is comparative modelling. This research compares three represent
 
 The modelling output follows a dual-stream prediction design. The first stream is a regression stream, where the model predicts the expected number of dengue cases four weeks ahead. The second stream is a classification stream, where the system predicts whether a district/RDHS area is likely to enter an outbreak or high-risk condition four weeks ahead. For classification, a district-specific alert threshold can be created using historical dengue case patterns, such as historical mean plus two standard deviations. This allows the system to provide both a numerical forecast and a practical warning decision.
 
-After model training, the models will be evaluated using regression and classification metrics to identify the most suitable model for dashboard integration. The final stage is dashboard prototype development. The dashboard prototype will mainly display predicted dengue case counts, alert status, dengue trends, and weather trends. If implementation time allows, district risk maps and main contributing weather-lag factors will also be included. This makes the research useful not only as a prediction experiment but also as a public-health decision-support system.
+After model training, the models will be evaluated using regression and classification metrics to identify the most suitable model for dashboard integration. This phase focuses on comparing different models based on their predictive performance and selecting the best-performing model for deployment.
+
+The final stage is dashboard prototype development. The dashboard will mainly display predicted dengue case counts, alert status, dengue trends, and weather trends. If implementation time allows, district risk maps and main contributing weather-lag factors will also be included. This makes the research useful not only as a prediction experiment but also as a public-health decision-support system.
 
 \subsection{Tools, Technologies, and Frameworks Selected}
 
@@ -169,7 +169,7 @@ The tools and technologies selected for this research are chosen based on data p
 \midrule
 Programming language & Python & Main language for data processing, modelling, and evaluation. \\
 
-Data handling & Pandas, NumPy & Preparing the weather dataset, integrating dengue case values, generating features, and analysing dengue-weather patterns. \\
+Data handling & Pandas, Power BI, NumPy & Preparing the weather dataset, integrating dengue case values, generating features, and analysing dengue-weather patterns. \\
 
 Weather data source & NASA POWER API & Collecting rainfall, temperature, and humidity values using representative district/RDHS coordinates. \\
 
@@ -185,16 +185,26 @@ Explainability & SHAP / Feature importance & Explaining which features contribut
 
 Model evaluation & scikit-learn metrics, NumPy, Pandas & Calculating MAE, RMSE, MAPE, Precision, Recall, F1-score, and ROC-AUC. \\
 
-Dashboard development & Streamlit; React as optional enhancement & Building the early warning dashboard prototype. Streamlit is suitable for fast Python-based dashboard development, while React may be considered later for a more customized frontend. \\
+Development & Streamlit, React & Building the early warning dashboard prototype. Streamlit is suitable for fast Python-based dashboard development, while React may be considered later for a more customized frontend. \\
 
 Version control & GitHub & Managing source code, documentation, experiment versions, and collaboration. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-Python is selected because it provides strong support for data science, time-series modelling, machine learning, and deep learning. Pandas and NumPy will be used for preparing the district/RDHS-week dataset. The SARIMAX model will be implemented using statistical modelling libraries such as statsmodels or pmdarima. LightGBM will be used for the machine learning model because it is efficient for structured tabular data and supports feature importance analysis. LSTM will be implemented using either TensorFlow/Keras or PyTorch, depending on development convenience.
 
-Matplotlib will be used for static analysis graphs in the report, while Plotly will be used for interactive dashboard visualizations. SHAP or feature importance will be used to explain which variables influenced the model prediction. For example, the system can show whether a high-risk alert was mainly influenced by recent dengue increase, rainfall several weeks earlier, high humidity, or monsoon-period effects.
+
+
+
+The study uses Python as the primary programming language due to its strong support for data processing, time-series modelling, machine learning, and deep learning. Data handling is performed using Pandas, NumPy, and Power BI to prepare the weather dataset, integrate dengue case data, generate features, and analyse dengue–weather relationships. NASA POWER API is used as the weather data source to collect rainfall, temperature, and humidity values based on district/RDHS coordinates.
+
+Statistical modelling is carried out using statsmodels or pmdarima for SARIMAX-based time-series forecasting, while LightGBM and scikit-learn are used for machine learning model development, preprocessing, validation, and performance evaluation. Deep learning models are implemented using TensorFlow/Keras or PyTorch to capture sequential dengue–weather patterns.
+
+For visualization, Matplotlib and Plotly are used to generate dengue trends, weather patterns, lag-analysis results, and model outputs. Model interpretability is achieved using SHAP and feature importance techniques, particularly for the LightGBM model, to identify key influencing variables.
+
+Model evaluation is performed using scikit-learn metrics along with NumPy and Pandas to compute performance measures such as MAE, RMSE, MAPE, Precision, Recall, F1-score, and ROC-AUC.
+
+For system development, Streamlit and React are used to build the early warning dashboard prototype, where Streamlit has already been implemented for weather data handling and will be extended for dashboard development. GitHub is used for version control, supporting code management, documentation, and collaboration throughout the project.
 
 \subsection{Research Framework}
 
@@ -268,10 +278,10 @@ An example validation setup is shown below:
 \toprule
 \textbf{Training Period} & \textbf{Testing Period} \\
 \midrule
-2017--2020 & 2021 \\
-2017--2021 & 2022 \\
-2017--2022 & 2023 \\
-2017--2023 & 2024 \\
+2016--2020 & 2021 \\
+2016--2021 & 2022 \\
+2016--2022 & 2023 \\
+2016--2023 & 2024 \\
 \bottomrule
 \end{tabular}
 \end{center}
