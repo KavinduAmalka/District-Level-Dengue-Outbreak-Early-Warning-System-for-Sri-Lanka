@@ -169,7 +169,7 @@ The tools and technologies selected for this research are chosen based on data p
 \midrule
 Programming language & Python & Main language for data processing, modelling, and evaluation. \\
 
-Data handling & Pandas, Power BI, NumPy & Preparing the weather dataset, integrating dengue case values, generating features, and analysing dengue-weather patterns. \\
+Data handling & Pandas, NumPy & Preparing the weather dataset, integrating dengue case values, generating features, and analysing dengue-weather patterns. \\
 
 Weather data source & NASA POWER API & Collecting rainfall, temperature, and humidity values using representative district/RDHS coordinates. \\
 
@@ -179,7 +179,7 @@ Machine learning & LightGBM, scikit-learn & Training LightGBM models and support
 
 Deep learning & TensorFlow/Keras or PyTorch & Developing LSTM-based time-series models to learn sequential dengue-weather patterns. \\
 
-Visualization & Matplotlib, Plotly & Creating dengue trend graphs, weather graphs, lag-analysis plots, model result visualizations, and interactive dashboard charts. \\
+Visualization & Power BI,Matplotlib, Plotly & Creating dengue trend graphs, weather graphs, lag-analysis plots, model result visualizations, and interactive dashboard charts. \\
 
 Explainability & SHAP / Feature importance & Explaining which features contribute most to dengue predictions, especially for the LightGBM model. \\
 
@@ -196,11 +196,11 @@ Version control & GitHub & Managing source code, documentation, experiment versi
 
 
 
-The study uses Python as the primary programming language due to its strong support for data processing, time-series modelling, machine learning, and deep learning. Data handling is performed using Pandas, NumPy, and Power BI to prepare the weather dataset, integrate dengue case data, generate features, and analyse dengue–weather relationships. NASA POWER API is used as the weather data source to collect rainfall, temperature, and humidity values based on district/RDHS coordinates.
+The study uses Python as the primary programming language due to its strong support for data processing, time-series modelling, machine learning, and deep learning. Data handling is performed using Pandas and NumPy to prepare the weather dataset, integrate dengue case data, generate features, and analyse dengue–weather relationships. NASA POWER API is used as the weather data source to collect rainfall, temperature, and humidity values based on district/RDHS coordinates.
 
 Statistical modelling is carried out using statsmodels or pmdarima for SARIMAX-based time-series forecasting, while LightGBM and scikit-learn are used for machine learning model development, preprocessing, validation, and performance evaluation. Deep learning models are implemented using TensorFlow/Keras or PyTorch to capture sequential dengue–weather patterns.
 
-For visualization, Matplotlib and Plotly are used to generate dengue trends, weather patterns, lag-analysis results, and model outputs. Model interpretability is achieved using SHAP and feature importance techniques, particularly for the LightGBM model, to identify key influencing variables.
+For visualization, Power BI,Matplotlib and Plotly are used to generate dengue trends, weather patterns, lag-analysis results, and model outputs. Model interpretability is achieved using SHAP and feature importance techniques, particularly for the LightGBM model, to identify key influencing variables.
 
 Model evaluation is performed using scikit-learn metrics along with NumPy and Pandas to compute performance measures such as MAE, RMSE, MAPE, Precision, Recall, F1-score, and ROC-AUC.
 
