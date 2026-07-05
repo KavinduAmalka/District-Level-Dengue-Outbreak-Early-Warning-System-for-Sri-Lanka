@@ -81,53 +81,9 @@ To transition from crisis management to proactive strategic prevention, this res
 \section{Comprehensive Literature Review}
 \label{sec:lit_review}
 
-\subsection{Systematic Review of Relevant Sources}
 
 
-\subsubsection{Epidemiological Trends and Seasonal Dynamics}
-\begin{itemize}
-    \item Dengue is a hyperendemic disease in Sri Lanka, characterized by cyclic outbreak patterns and persistent year-round transmission.
-    \item Data from 2000–2020 confirms that major epidemic surges occurred in 2004, 2009, 2012, 2017, and 2019, with the 2017 outbreak reporting a record 186,101 cases.
-    \item Transmission is intrinsically linked to monsoon cycles, with two recurring peaks observed between May–July and October–January.
-    \item Spatial studies identify Colombo and Gampaha as high-burden hubs, while high-altitude regions like Nuwara Eliya maintain lower, stable risk levels.
-\end{itemize}
 
-\subsubsection{Methodological Evolution in Dengue Forecasting}
-\begin{itemize}
-    \item Baseline statistical models, such as ARIMA and SARIMAX, have been widely utilized for weekly and monthly dengue forecasting in districts like Colombo and Gampaha.
-    \item While effective for normal seasonality, research by Karasinghe et al. (2024) and Uduwanage et al. (2025) demonstrates that these models struggle during anomalous disruptions, such as the COVID-19 pandemic, where reporting and human mobility patterns shifted.
-    \item Conventional approaches often treat climate variables as linear inputs, failing to capture the complex, multi-frequency scale dynamics observed in dengue transmission.
-    \item Recent literature indicates that incorporating multi-frequency climate lags and causal pathways significantly improves short-term predictive accuracy.
-\end{itemize}
-
-\subsubsection{Advanced Machine Learning and Operational Decision Support}
-\begin{itemize}
-    \item Studies by Rahman et al. (2025) and Al Bannoud et al. (2026) advocate for the use of interpretable tree-based models like LightGBM and XGBoost, which allow for SHAP-based feature importance analysis.
-    \item Model robustness under extreme conditions is a critical requirement; research on virtual data augmentation shows that training on synthesized "extreme outbreak" scenarios prevents models from underestimating massive surges.
-    \item Operational gaps remain in traditional control, as identified by Rahulan et al. (2024), where the failure to convert data into evidence-based field instructions—rather than just predictive numbers—hampers effective dengue prevention in high-risk districts.
-\end{itemize}
-
-\subsubsection{Synthesized Research Positioning and Gap Analysis}
-\begin{itemize}
-    \item Current research is fragmented, with most studies limited to single districts, short time-periods, or narrow variable sets that exclude critical factors like population density, waste management, and social landscape indices.
-    \item There is a clear absence of a unified, national-level early warning system that integrates these multi-dimensional factors into a practical, real-time GIS-enabled decision support dashboard.
-    \item This study positions itself to bridge these gaps by synthesizing long-term longitudinal data with machine learning, focusing on district-specific climate lags and interpretable risk-visualization to assist public-health decision-makers.
-\end{itemize}
-
-\subsection{Critical Analysis of Existing Work}
-\begin{itemize}
-    \item \textbf{Geographical and Temporal Scope Limitations:} While GIS-based spatial analysis and ARIMA-based forecasting are prevalent in local dengue research, a critical review shows that the vast majority of studies are confined to isolated districts, predominantly Colombo and Gampaha. Many analyses utilize short-term data windows (3–5 years), which are insufficient to capture long-term epidemiological trends, the impact of economic crises, or the significant reporting anomalies introduced by the COVID-19 pandemic.
-    \item \textbf{Methodological Rigidity:} Traditional statistical models like ARIMA often rely solely on historical dengue case counts, neglecting external drivers such as climate lags, vector density, and environmental sanitation indicators. Although newer studies have begun incorporating climate parameters, many fail to account for the "non-stationarity" of dengue drivers—where the same climatic factor (e.g., rainfall) can influence outbreak risk differently across distinct climate zones.
-    \item \textbf{Lack of Actionable Interpretability:} A recurring weakness in existing predictive models is their "black-box" nature. While they may yield high statistical accuracy, they often fail to provide the qualitative reasoning required by Public Health Inspectors (PHIs) and health authorities to choose specific, targeted field interventions. The literature emphasizes that forecasting is only useful if it is converted into actionable, district-specific alerts that integrate with existing public-health administrative protocols.
-\end{itemize}
-
-\subsection{Clear Positioning of Our Research}
-\begin{itemize}
-    \item \textbf{Bridging the Operational Gap:} Unlike existing literature that predominantly focuses on statistical forecasting accuracy alone, this research explicitly bridges the gap between predictive analytics and field-level public-health intervention. By integrating climate-lag features with operational decision-support modules, our framework provides actionable, district-specific alerts rather than just numerical forecasts.
-    \item \textbf{Methodological Hybridization:} We position our research as a methodological evolution from traditional univariate ARIMA/SARIMAX models to a multi-domain Hybrid LSTM-XGBoost framework. This framework allows us to capture both long-term temporal dependencies through LSTM blocks and complex spatial/environmental variations via XGBoost/LightGBM pipelines.
-    \item \textbf{Context-Aware Interpretability:} Recognizing the limitations of "black-box" models, this research embeds SHAP-based interpretability into the core dashboard design. This ensures that public-health officers can visualize not just the "risk level" for a district, but the specific contributing factors (e.g., rainfall lag, temperature thresholds, or environmental risk indices), thereby directly supporting targeted vector-control strategies.
-    \item \textbf{National Scalability with District-Level Granularity:} While previous studies are largely confined to isolated districts or short time-periods, our research contributes a scalable, all-district framework that accounts for the diverse spatiotemporal dynamics of Sri Lanka. By synthesizing long-term epidemiological ledger data with meteorological and socio-environmental indicators, we establish a robust, national-level early warning strategy that remains sensitive to the unique ecological and demographic nuances of each district.
-\end{itemize}
 
 \clearpage
 % --- 3. SOLID EXPERIMENTAL SETUP / RESEARCH DESIGN ---
