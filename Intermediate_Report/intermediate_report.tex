@@ -41,8 +41,7 @@
     \textbf{Group Number: Group 10}\\[4.5cm]
 
     {\textbf{Group Members:}}\\[0.3cm]
-    \begin{table}[h]
-        \centering
+    \begin{center}
         \begin{tabular}{|l|l|}
             \hline
             \textbf{Name}      & \textbf{Student ID} \\ \hline
@@ -51,7 +50,7 @@
             Sandaru Mihiran    & SE/2021/010         \\ \hline
             Sachini Weerakkody & SE/2021/018         \\ \hline
         \end{tabular}
-    \end{table}
+    \end{center}
 
     \vfill
     Date: \today
@@ -65,13 +64,13 @@
 
 Dengue fever is a critical, hyperendemic public health crisis in Sri Lanka. Its transmission is closely linked to seasonal monsoonal climate shifts, yet current national management strategies remain reactive, relying on retrospective hospital records rather than anticipation. Consequently, vector control measures are often deployed after outbreaks peak, causing sub-optimal medical resource allocation.  
 
-To transition from crisis management to proactive strategic prevention, this research introduces an early warning system covering all 26 Regional Director of Health Services (RDHS)/District areas across Sri Lanka. By leveraging machine learning architectures, the system integrates historical epidemiological trends with micro-climatic indicators to deliver a 4-week-ahead outbreak forecasting index. This early warning buffer empowers Public Health Inspectors (PHIs) to precision-target vector populations and mobilize emergency medical resources before clinical surges occur.  
+To transition from crisis management to proactive strategic prevention, this research introduces an early warning system covering all 26 Regional Director of Health Services (RDHS\slash District) areas across Sri Lanka. By leveraging machine learning architectures, the system integrates historical epidemiological trends with micro-climatic indicators to deliver a 4-week-ahead outbreak forecasting index. This early warning buffer empowers Public Health Inspectors (PHIs) to precision-target vector populations and mobilize emergency medical resources before clinical surges occur.  
 \subsection{Research Objectives}
 \begin{itemize}
-    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit’s Weekly Epidemiological Reports with synchronized meteorological data (Rainfall, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS areas longitudinal panel dataset.
+    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit’s Weekly Epidemiological Reports with synchronized meteorological data (Rainfall, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS\slash District areas longitudinal panel dataset.
     \item \textbf{Dual-Stream Modeling:} Implement parallel LSTM and XGBoost machine learning pipelines to execute Regression (case forecasting) and Classification (outbreak risk mapping) within a single execution block.
-    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics between Sri Lanka's Wet and Dry zones.
-    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 RDHS health administration regions simultaneously, overcoming the geographical limitations of prior localized studies.
+    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS\slash District-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics between Sri Lanka's Wet and Dry zones.
+    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 administrative health regions (RDHS\slash District) simultaneously, overcoming the geographical limitations of prior localized studies.
     \item \textbf{Decision-Support Interface:} Build an interactive React.js web dashboard that translates complex machine learning forecasts into intuitive geospatial risk visualizations for health authorities.
 \end{itemize}
 
@@ -336,7 +335,7 @@ The final selected model will be chosen based on both prediction performance and
 \label{sec:data_collection}
 
 \subsection{Data Sources Identification and Access Portals}
-To engineer a highly resilient and statistically sound predictive framework, it was imperative to construct a multi-dimensional, long-term longitudinal dataset covering a 10-year historical window from January 2016 to May 31, 2026. The data ingestion phase focuses on capturing synchronized epidemiological and micro-climatic feature streams across all 26 Regional Director of Health Services (RDHS)/District areas in Sri Lanka.
+To engineer a highly resilient and statistically sound predictive framework, it was imperative to construct a multi-dimensional, long-term longitudinal dataset covering a 10-year historical window from January 2016 to May 31, 2026. The data ingestion phase focuses on capturing synchronized epidemiological and micro-climatic feature streams across all 26 Regional Director of Health Services (RDHS/District) areas in Sri Lanka.
 
 \subsubsection{Epidemiological Data Source: Ministry of Health Epidemiology Unit}
 The primary ground-truth source for historical dengue incidence was official national surveillance records compiled by the Ministry of Health, Sri Lanka. Data was systematically accessed and downloaded from the official repository (\url{https://www.epid.gov.lk/weekly-epidemiological-report/weekly-epidemiological-report}). Retrieved individual Weekly Epidemiological Report (WER) documents in PDF format were used, and for each Epi-Week, data was mapped against the 26 RDHS/District administrative health domains.
