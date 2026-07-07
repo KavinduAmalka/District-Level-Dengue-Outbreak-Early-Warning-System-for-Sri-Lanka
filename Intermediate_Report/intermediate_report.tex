@@ -67,11 +67,12 @@ Dengue fever is a critical, hyperendemic public health crisis in Sri Lanka. Its 
 To transition from crisis management to proactive strategic prevention, this research introduces an early warning system covering all 26 Regional Director of Health Services (RDHS)\slash District areas across Sri Lanka. By leveraging machine learning architectures, the system integrates historical epidemiological trends with micro-climatic indicators to deliver a 4-week-ahead outbreak forecasting index. This early warning buffer empowers Public Health Inspectors (PHIs) to precision-target vector populations and mobilize emergency medical resources before clinical surges occur.  
 \subsection{Research Objectives}
 \begin{itemize}
-    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit’s Weekly Epidemiological Reports with synchronized meteorological data (Precipitation, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS\slash District areas longitudinal panel dataset.
-    \item \textbf{Dual-Stream Modeling:} Implement parallel LSTM and XGBoost machine learning pipelines to execute Regression (case forecasting) and Classification (outbreak risk mapping) within a single execution block.
-    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS\slash District-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics between Sri Lanka's Wet and Dry zones.
-    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 administrative health regions (RDHS)\slash District simultaneously, overcoming the geographical limitations of prior localized studies.
-    \item \textbf{Decision-Support Interface:} Build an interactive React.js web dashboard that translates complex machine learning forecasts into intuitive geospatial risk visualizations for health authorities.
+    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit's Weekly Epidemiological Reports with synchronized meteorological data (Precipitation, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS\slash District areas longitudinal panel dataset.
+    \item \textbf{Comparative Modeling Framework:} Implement and evaluate parallel forecasting pipelines utilizing SARIMAX, LightGBM, and LSTM architectures to benchmark statistical, machine learning, and deep learning approaches under a uniform predictive environment.
+    \item \textbf{Dual-Stream Prediction Output:} Configure the modeling architectures to deliver dual forecasting streams, generating both continuous numbers for 4-week-ahead case counts (Regression) and localized outbreak risk alerts (Classification).
+    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS\slash District-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics and seasonal monsoon variations between Sri Lanka's Wet, Dry, and Intermediate zones.
+    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 administrative health regions (RDHS\slash District) simultaneously, overcoming the geographical and data-availability limitations of prior localized studies.
+    \item \textbf{Decision-Support Interface:} Build an interactive React.js web dashboard that translates complex modeling forecasts into intuitive geospatial risk visualizations and alert levels for health authorities.
 \end{itemize}
 
 
