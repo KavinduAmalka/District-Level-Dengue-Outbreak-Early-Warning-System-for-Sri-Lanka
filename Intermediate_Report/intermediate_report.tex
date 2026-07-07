@@ -62,16 +62,16 @@
 % --- 1. INTRODUCTION & PROJECT OVERVIEW ---
 \section{Introduction \& Project Overview}
 
-Dengue fever is a critical, hyperendemic public health crisis in Sri Lanka. Its transmission is closely linked to seasonal monsoonal climate shifts, yet current national management strategies remain reactive, relying on retrospective hospital records rather than anticipation. Consequently, vector control measures are often deployed after outbreaks peak, causing sub-optimal medical resource allocation.  
+Dengue fever is a critical, hyperendemic public health crisis in Sri Lanka. Its transmission is closely linked to seasonal monsoonal climate shifts, yet current national management strategies remain reactive, relying on retrospective hospital records rather than anticipation. Consequently, vector control measures are often deployed after outbreaks peak, causing sub-optimal medical resource allocation.
 
-To transition from crisis management to proactive strategic prevention, this research introduces an early warning system covering all 26 Regional Director of Health Services (RDHS)\slash District areas across Sri Lanka. By leveraging machine learning architectures, the system integrates historical epidemiological trends with micro-climatic indicators to deliver a 4-week-ahead outbreak forecasting index. This early warning buffer empowers Public Health Inspectors (PHIs) to precision-target vector populations and mobilize emergency medical resources before clinical surges occur.  
+To transition from crisis management to proactive strategic prevention, this research introduces an early warning system covering all 26 Regional Director of Health Services (RDHS)/District areas across Sri Lanka. By leveraging advanced statistical, machine learning, and deep learning architectures, the system integrates historical epidemiological trends with micro-climatic indicators to deliver a 4-week-ahead outbreak forecasting index. This early warning buffer empowers Public Health Inspectors (PHIs) to precision-target vector populations and mobilize emergency medical resources before clinical surges occur.
 \subsection{Research Objectives}
 \begin{itemize}
-    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit's Weekly Epidemiological Reports with synchronized meteorological data (Precipitation, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS\slash District areas longitudinal panel dataset.
+    \item \textbf{Data Fusion:} Integrate historical weekly dengue cases extracted from the Epidemiology Unit’s Weekly Epidemiological Reports with synchronized meteorological data (Precipitation, Temperature, Humidity) from the NASA POWER API into a unified 26 RDHS\slash District areas longitudinal panel dataset.
     \item \textbf{Comparative Modeling Framework:} Implement and evaluate parallel forecasting pipelines utilizing SARIMAX, LightGBM, and LSTM architectures to benchmark statistical, machine learning, and deep learning approaches under a uniform predictive environment.
     \item \textbf{Dual-Stream Prediction Output:} Configure the modeling architectures to deliver dual forecasting streams, generating both continuous numbers for 4-week-ahead case counts (Regression) and localized outbreak risk alerts (Classification).
-    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS\slash District-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics and seasonal monsoon variations between Sri Lanka's Wet, Dry, and Intermediate zones.
-    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 administrative health regions (RDHS\slash District) simultaneously, overcoming the geographical and data-availability limitations of prior localized studies.
+    \item \textbf{Regional Adaptation \& Lag Analysis:} Isolate RDHS\slash District-specific climate-to-outbreak time lags to capture the unique epidemiological dynamics and seasonal monsoon variations between Sri Lanka’s Wet, Dry, and Intermediate zones.
+    \item \textbf{National Scale Generalization:} Expand predictive modeling across all 26 administrative health regions (RDHS)\slash District simultaneously, overcoming the geographical and data-availability limitations of prior localized studies.
     \item \textbf{Decision-Support Interface:} Build an interactive React.js web dashboard that translates complex modeling forecasts into intuitive geospatial risk visualizations and alert levels for health authorities.
 \end{itemize}
 
@@ -323,13 +323,6 @@ In outbreak prediction, recall is especially important because missing a real ou
 The final selected model will be chosen based on both prediction performance and practical usefulness. A model with slightly lower numerical accuracy but better outbreak detection and interpretability may be more useful for a public-health early warning system. Therefore, the validation process will consider regression accuracy, classification performance, alert reliability, and interpretability before selecting the final model for dashboard integration.
 
 
-
-
-
-
-
-
-
 \clearpage
 % --- 4. DATA COLLECTION PROGRESS ---
 \section{Data Collection Progress}
@@ -353,7 +346,6 @@ A custom Python-based web application was architected using the Streamlit framew
 \begin{itemize}
     \item Weekly mathematical Average (Mean) for Atmospheric Temperature.
     \item Weekly mathematical Average (Mean) for Relative Humidity.
-    \item Weekly mathematical Average (Mean) for Precipitation.
     \item A dedicated, cumulative feature column representing the Total Weekly Precipitation (summation of the 7-day precipitation block).
 \end{itemize}
 
@@ -512,7 +504,7 @@ The integration of satellite-derived meteorological variables with multi-year gr
 \begin{itemize}
     \setlength{\itemsep}{1em}
     \item \textbf{Dynamic Forcing Agents vs Ambient Enablers:} The contrasting behaviors between precipitation (Precipitation\_Total\_mm) and atmospheric thermodynamics (Temp\_C and Humidity\_\%) highlight a multi-tier ecological relationship. While cumulative precipitation acts as the active, dynamic forcing agent that dictates the timing and magnitude of larval propagation surges, temperature and humidity operate as ambient enabling parameters. The steady temperature profile provides the necessary thermal window required to regulate the Extrinsic Incubation Period (EIP) of the dengue virus, while the high relative humidity baseline prevents vector desiccation and prolongs adult mosquito lifespans.
-    \item \textbf{Implications for Hybrid Predictive Modeling:} These insights directly validate the architectural necessity of the proposed hybrid model. The continuous, deep sequence dependencies of the climate-dengue lag are perfectly suited for the LSTM stream, which excels at remembering long-term temporal interactions. Concurrently, the categorical zonal disparities and threshold-based risks (such as the high 67.5\% concentration within the Wet Zone) will be efficiently parsed by the XGBoost stream. Combining these early insights ensures that the final model will achieve highly accurate spatial-temporal forecasting.
+    \item \textbf{Implications for Comparative Modeling and Selection:} These insights directly validate the structural necessity of our comparative architectural design. The continuous, deep sequence dependencies and temporal offsets identified in the climate-dengue lag are perfectly suited to test the capabilities of the LSTM stream, which excels at remembering long-term sequential interactions. Concurrently, the sharp categorical zonal disparities and threshold-based risks (such as the high 67.5\% concentration within the Wet Zone) provide an ideal environment to evaluate the LightGBM stream, which is highly efficient at parsing non-linear tabular feature structures. By benchmarking these advanced models against the SARIMAX statistical baseline, this comparative setup ensures that the final model selected for dashboard integration will be the absolute best-performing architecture for Sri Lanka's spatial-temporal forecasting.
 \end{itemize}
 
 \newpage
